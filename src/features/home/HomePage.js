@@ -26,17 +26,7 @@ export default function HomePage() {
   
   return (
     <>
-      <SnackbarContent
-        message={
-            <span onClick={() => window.open(t('Home-SnackBarUrl'))} style={{fontWeight: "bold"}}>
-              {t('Home-SnackBarText')}
-            </span>
-        }
-        close
-        color="success"
-      />
-      <CustomCarousel />
-      <SectionPools />
+      <h1>todo</h1>
     </>
   );
 }
