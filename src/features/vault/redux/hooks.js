@@ -3,6 +3,7 @@ import { useState, useCallback, useEffect, useMemo } from 'react';
 import { useDispatch } from 'react-redux';
 import { enqueueSnackbar } from '../../common/redux/actions';
 import { ethers, utils, BigNumber } from 'ethers';
+import { useFetchContractApy } from './fetchContractApy';
 
 import { useConnectWallet } from '../../home/redux/hooks';
 import { getBasicsOf } from "../../common/LunarModule";
@@ -23,6 +24,7 @@ export function usePoolApy(
   ) {
     const [rewardRate, updateRewardRate] = useState(BigNumber.from(0));
     const [totalStaked, updateTotalStaked] = useState(BigNumber.from(0));
+    const { contractApy, fetchContractApy } = useFetchContractApy();
     const [stats, updateStats] = useState({
       mission: "",
     });
@@ -65,8 +67,9 @@ export function usePoolApy(
     const isPoolStopped = useMemo(() => rewardRate.eq(0), [rewardRate]);
 
     const memoizedApy = useMemo(() => {
+        
       if (pool.itokenDecimals === 0 || pool.tokenDecimals === 0) {
-        return "---.--";
+        return "---.test";
       }
       const formattedRewardTokenValue = utils.formatUnits(
         everyRewardValue,
@@ -96,7 +99,13 @@ export function usePoolApy(
         Number(formattedtotalStaked) * Number(formattedStakingTokenValue);
       let apy = yearlyRewardInBNB / totalStakedTokenInBNB;
       const apyForDisplay = (apy * 100).toFixed(2);
-      return apy === Number.POSITIVE_INFINITY ? "---.--" : apyForDisplay;
+      console.log('hooks.js.apyForDisplay', apyForDisplay)
+      console.log('hooks.pool.chainId', pool.chainId)
+      console.log('hooks.apy', apy)
+      console.log('hooks.pool.chainId == 1', pool.chainId == 1)
+      console.log('hooks.pool.id', pool.id)
+      console.log('hooks.js.contractApy[pool.id]', contractApy[pool.id])
+      return pool.chainId == 1 ? contractApy[pool.id] || 0 : apy === Number.POSITIVE_INFINITY ? "---" : apyForDisplay;
     }, [
       everyRewardValue,
       everyStakingValue,
