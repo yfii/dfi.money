@@ -12,7 +12,7 @@ export const ChainId = {
   }
   
   export const ReadonlyRpcEndpoint = {
-    [ChainId.MAINNET]: "https://etherscan.io",
+    [ChainId.MAINNET]: "https://mainnet.infura.io/v3/3016bb15ef69443f95c8538ec3b1b300",
     [ChainId.KOVAN]: "https://kovan.etherscan.io",
     [ChainId.HECO_MAINNET]: "https://http-mainnet.hecochain.com",
     [ChainId.HECO_TESTNET]: "https://http-testnet.hecochain.com",

@@ -140,6 +140,7 @@ export default function SectionPools() {
     let amountValue = depositedBalance[index] ? depositedBalance[index].replace(',',''): depositedBalance[index];
 
 
+    console.log('VaultPage.pool.tokenAddress', pool.tokenAddress)
     if (!pool.tokenAddress) {// 如果是eth
       fetchDepositEth({
         address,

@@ -17,7 +17,7 @@ import GridItem from "components/Grid/GridItem.js";
 
 import errorPageStyle from "assets/jss/material-kit-pro-react/views/errorPageStyles.js";
 
-import image from "assets/img/clint-mckoy.jpg";
+import image from "assets/img/carousel/qian.png";
 
 const useStyles = makeStyles(errorPageStyle);
 

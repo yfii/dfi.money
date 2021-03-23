@@ -17,8 +17,8 @@ import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
-import leftImage from 'assets/img/stake-head-left.png';
-import rightImage from 'assets/img/stake-head-right.png';
+import leftImage from 'assets/img/carousel/qian.png';
+import rightImage from 'assets/img/carousel/qian.png';
 import { useConnectWallet } from '../../home/redux/hooks';
 import { useFetchPoolsInfo } from '../redux/hooks';
 

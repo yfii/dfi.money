@@ -2,6 +2,13 @@ import { providers } from "ethers";
 import { ChainId, ReadonlyRpcEndpoint } from "../../common/constants";
 
 export const ReadOnlyProvider = {
+  // [ChainId.MAINNET]: new providers.JsonRpcProvider(
+  //   ReadonlyRpcEndpoint[ChainId.MAINNET],
+  //   {
+  //     chainId: ChainId.MAINNET,
+  //     name: "Eth Mainnet",
+  //   }
+  // ),
   [ChainId.HECO_MAINNET]: new providers.JsonRpcProvider(
     ReadonlyRpcEndpoint[ChainId.HECO_MAINNET],
     {
