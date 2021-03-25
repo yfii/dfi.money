@@ -26,7 +26,7 @@ export default function HomePage() {
   
   return (
     <>
-      <h1>todo</h1>
+      <CustomCarousel />
     </>
   );
 }

@@ -4,7 +4,6 @@ import { connectRouter } from 'connected-react-router'
 import history from './history';
 import homeReducer from 'features/home/redux/reducer';
 import vaultReducer from 'features/vault/redux/reducer';
-import stakeReducer from 'features/stake/redux/reducer';
 import farmReducer from 'features/farm/redux/reducer';
 import swapReducer from 'features/swap/redux/reducer';
 import liquidityReducer from 'features/liquidity/redux/reducer';

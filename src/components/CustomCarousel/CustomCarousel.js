@@ -8,6 +8,60 @@ import ElementResizeDetector from "element-resize-detector";
 
 import ImgUnisave from "assets/img/carousel/unisave-new.png";
 import YFIIMoon from "assets/img/carousel/yfii-moon.png";
+import bgi from "assets/img/home/bgi@2x.png";
+import man from "assets/img/home/man@3x@2x.png";
+import title from "assets/img/home/title@2x.png";
+import YFIIstatue from "assets/img/home/YFIIstatue@2x.png";
+// defi产品Image
+import sakeimg from "assets/img/home/sakeswap@2x.png";
+import ethimg from "assets/img/home/ETH@2x.png";
+import apollobscimg from "assets/img/home/apollobsc@2x.png";
+import ysdimg from "assets/img/home/YSD@2x.png";
+import unisaveimg from "assets/img/home/unisave_logo.png";
+import hecoimg from "assets/img/home/HECO@2x.png";
+import round from "assets/img/home/round@2x.png";
+
+// community mine image
+import boringdao from "assets/img/home/boringdao@2x.png";
+import orbits from "assets/img/home/orbits@2x.png";
+import golff from "assets/img/home/golff@2x.png";
+import wepiggy from "assets/img/home/wepiggy@2x.png";
+import qian_protocol from "assets/img/home/qian_protocol@2x.png";
+
+// community load image
+import fortube from "assets/img/home/fortube@2x.png";
+import filda from "assets/img/home/filda2x.png";
+import flux from "assets/img/home/flux.png";
+import wepiggyload from "assets/img/home/wepiggy@2x.png";
+
+// adavantage image
+import adasecurity from "assets/img/home/adasecurity@2x.png";
+import adahighprofit from "assets/img/home/adahighprofit@2x.png";
+import adastrongmanage from "assets/img/home/adastrongmanage@2x.png";
+
+// eco image
+import ecowepiggy from "assets/img/home/wepiggy@2x.png";
+import ecofinancex from "assets/img/home/financex@2x.png";
+import ecograpfarmer from "assets/img/home/grapfarmer@2x.png";
+import ecosfinance from "assets/img/home/s.finance@2x.png";
+import ecoysd from "assets/img/home/ecoysd@2x.png";
+
+// partner image
+import near from "assets/img/home/near@2x.png";
+import oasis from "assets/img/home/oasis@2x.png";
+import silfinance from "assets/img/home/silfinance@2x.png";
+import binancechain from "assets/img/home/binancechain@2x.png";
+import chainlink from "assets/img/home/chainlink@2x.png";
+
+import huobiECOChain from "assets/img/home/HuobiECOChain@2x.png";
+import acala from "assets/img/home/acala@2x.png";
+import polkadot from "assets/img/home/polkadot@2x.png";
+import moonswap from "assets/img/home/moonswap@2x.png";
+import nest from "assets/img/home/nest@2x.png";
+
+import fiargame from "assets/img/home/fiargame@2x.png";
+import mercurity from "assets/img/home/mercurity2x.png";
+import bifrost from "assets/img/home/bifrost@2x.png";
 
 import styles from "assets/jss/material-kit-pro-react/components/customCarouselStyle.js";
 
@@ -67,80 +121,253 @@ function CustomCarousel(props) {
   const { width } = rect;
   const height = width / (1200 / 300);
 
-  const sliderProps = {
-    accessibility: true,
-    adaptiveHeight: true,
-    // afterChange: ,
-    // appendDots: ,
-    arrows: false,
-    // asNavFor: ,
-    autoplaySpeed: 3000,
-    autoplay: true,
-    // beforeChange: ,
-    // centerMode: true,
-    // centerPadding: "50px",
-    // customPaging: ,
-    dotsClass: `slick-dots ${classes.dots}`,
-    dots: true,
-    draggable: true,
-    easing: "linear",
-    fade: false,
-    focusOnSelect: false,
-    infinite: true,
-    initialSlide: 0,
-    lazyLoad: true,
-    // onEdge: ,
-    // onInit: ,
-    // onLazyLoad: ,
-    // onReInit: ,
-    // onSwipe: ,
-    // pauseOnDotsHover: ,
-    // pauseOnFocus: ,
-    // pauseOnHover: ,
-    // responsive: ,
-    rows: 1,
-    rtl: false,
-    slide: "div",
-    slidesPerRow: 1,
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    speed: 500,
-    swipeToSlide: false,
-    swipe: true,
-    touchMove: true,
-    touchThreshold: 5,
-    useCSS: true,
-    useTransform: true,
-    variableWidth: false,
-    vertical: false,
-  };
-
   return (
-    <div ref={ref} className={classes.container}>
-      <Slider className={classes.slider} {...sliderProps}>
-        <div>
-          <a
-            className={classes.link}
-            href="https://matataki.io/p/6322"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-          >
-            <img src={YFIIMoon} alt="slider" width={width} height={height} />
-          </a>
+    <>
+    <div className={classes.container}>
+      {/* first section */}
+        <div className={classes.aligntop} style={{
+          backgroundImage: "url(" + bgi + ")"
+        }}>
+          <div className={classes.alignleft}>
+          <img src={title} className={classes.titleimage} />
+          <div className={classes.title}>Deposit to Earn !</div>
+          <div className={classes.titlenext}>A DeFi-farming aggregator that automatically puts your crypto assets to work for high yield profits.</div>
+          <div className={classes.titlebutton}>
+            <a className={classes.titlebuttona} href="#/vault">立即赚取收益！</a>
+              </div>
+          </div>
+          <div className={classes.alignright}>
+            <img src={man} className={classes.alignright_firstimage}/>
+            <img src={YFIIstatue} className={classes.alignright_nextimage}/>
+          </div>
         </div>
-        <div>
-          <a
-            className={classes.link}
-            href="https://unisave.exchange/"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-          >
-            <img src={ImgUnisave} alt="slider" width={width} height={height} />
-          </a>
-        </div>
-      </Slider>
     </div>
+    {/* defi product */}
+    <div className={classes.producttitle}>
+      <div className={classes.producttitletext}>
+        DFI的产品
+      </div>
+      </div>
+    <div ref={ref} className={classes.container}>
+      <div className={classes.productleft}>
+      <img src={round} className={classes.roundimg} />
+      {/* <img src={sakeimg} className={classes.sakeimg} />
+      <img src={ethimg} className={classes.ethimg} />
+      <img src={apollobscimg} className={classes.apollobscimg} />
+      <img src={unisaveimg} className={classes.unisaveimg} />
+      <img src={hecoimg} className={classes.hecoimg} />
+      <img src={ysdimg} className={classes.ysdimg} /> */}
+      </div>
+      <div className={classes.productright}>
+        <ul>
+          <li>
+            <a href="#/vault">以太坊机枪池</a>
+          </li>
+          <li>
+            <a href="#/vault">BSC登月舱机枪池</a>
+          </li>
+          <li>
+            <a href="#/vault">HECO登月舱机枪池</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://app.unisave.exchange/#/swap">Unisave</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://sakeswap.finance/">Sakeswap</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://sakeswap.finance/">YSD</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+    {/* defi advantage */}
+    <div className={classes.producttitle}>
+      <div className={classes.producttitletext}>
+        DFI的优势
+      </div>
+      </div>
+    <div ref={ref} className={classes.container}>
+          <div className={classes.productadvantage}>
+        <ul>
+          <li>
+          <img src={adasecurity}/>
+          <p>安全优势</p>
+          {/* <span>所有正式上线的DFI.Money产品将在至少一家权威安全机构完成审核后才会发布。任何新业务类型都将优先考虑用户资产安全。</span> */}
+          <p>点击此处查看我们的<a href="">审计报告</a></p>
+          </li>
+          <li>
+          <img src={adahighprofit}/>
+          <p>高收益</p>
+          {/* <span>除了基本的长期挖矿策略，BSC和Heco链上的机枪池还为用户提供了中短期超高收益策略。创新性的使用可插拔技术，帮助开发者快速切换策略，为用户捕获头矿高额收益。</span> */}
+          <p>点击此处了解当前的<a href="">底层策略</a></p>
+          </li>
+          <li>
+          <img src={adastrongmanage}/>
+          <p>强大的治理</p>
+          {/* <span>积极的开发、营销和运营团队，可靠的资助委员会，持续的行动。从项目挖掘开始，DFI.Money核心开发团队对协议治理有了更积极、更负责任的考虑，它将与社区共同构建独特的DAO价值和科学的治理框架。</span> */}
+          <p>点击此处了解<a href="">提案流程</a></p>
+            
+          </li>
+        </ul>
+      </div>
+      </div>
+
+    {/* defi eco products */}
+    <div className={classes.producttitle}>
+      <div className={classes.producttitletext}>
+        DFI生态项目
+      </div>
+      </div>
+    <div ref={ref} className={classes.container}>
+          <div className={classes.productecoproducts}>
+        <ul>
+          <li>
+          <img src={ecowepiggy}/>
+          <p className={classes.pcontext}>一个借货平台</p>
+          {/* <div className={classes.ecotitlebutton}>
+            <a target="_blank" className={classes.ecotitlebuttona} href="https://wepiggy.com/">立即访问</a>
+          </div> */}
+          <a target="_blank" className={classes.ecotitlebuttona} href="https://wepiggy.com/">立即访问</a>
+          </li>
+          <li>
+          <img src={ecofinancex}/>
+          <p className={classes.pcontext}>以太链上期权平台</p>
+          {/* <div className={classes.ecotitlebutton}>
+            <a target="_blank" className={classes.ecotitlebuttona} href="https://financex.io/">立即访问</a>
+          </div> */}
+          <a target="_blank" className={classes.ecotitlebuttona} href="https://financex.io/">立即访问</a>
+          </li>
+          <li>
+          <img src={ecograpfarmer}/>
+          <p className={classes.pcontext}>主打YAM玩法的挖矿协议</p>
+          {/* <div className={classes.ecotitlebutton}>
+            <a target="_blank" className={classes.ecotitlebuttona} href="https://grap.finance/">立即访问</a>
+          </div> */}
+          <a target="_blank" className={classes.ecotitlebuttona} href="https://grap.finance/">立即访问</a>
+          </li>
+          <li>
+          <img src={ecosfinance}/>
+          <p className={classes.pcontext}>以太链上期权平台</p>
+          {/* <div className={classes.ecotitlebutton}>
+            <a target="_blank" className={classes.ecotitlebuttona} href="https://s.finance/">立即访问</a>
+          </div> */}
+          <a target="_blank" className={classes.ecotitlebuttona} href="https://s.finance/">立即访问</a>
+          </li>
+          <li>
+          <img src={ecoysd}/>
+          <p className={classes.pcontext}>基于YFII的算法稳定币</p>
+          {/* <div className={classes.ecotitlebutton}>
+            <a target="_blank" className={classes.ecotitlebuttona} href="#/vault">立即访问</a>
+          </div> */}
+          <a target="_blank" className={classes.ecotitlebuttona} href="#/vault">立即访问</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+      {/* defi community supported products */}
+      <div className={classes.producttitle}>
+      <div className={classes.producttitletext}>
+        DFI社区支持的项目
+      </div>
+      </div>
+    <div ref={ref} className={classes.container}>
+          <div className={classes.productsupportedmine}>
+          <div className={classes.productsupportedtext}>支持YFII单币挖矿项目</div>
+        <ul>
+          <li>
+          <img src={boringdao}/>
+          </li>
+          <li>
+          <img src={orbits}/>
+          </li>
+          <li>
+          <img src={wepiggy} />
+          </li>
+          <li>
+          <img src={qian_protocol}/>
+          </li>
+          <li>
+          <img src={golff} />
+          </li>
+        </ul>
+      </div>
+          <div className={classes.productsupportedload}>
+          <div className={classes.productsupportedtext}>支持YFII借贷项目</div>
+          <ul>
+          <li>
+          <img src={fortube}/>
+          </li>
+          <li>
+          <img src={filda}/>
+          </li>
+          <li>
+          <img src={flux}/>
+          </li>
+          <li>
+          <img src={wepiggyload}/>
+          </li>
+        </ul>
+          </div>
+      </div>
+
+      {/* defi eco products */}
+      <div className={classes.producttitle}>
+      <div className={classes.producttitletext}>
+      其它合作伙伴
+      </div>
+      </div>
+    <div ref={ref} className={classes.container}>
+      <div className={classes.productpartner}>
+        <ul>
+          <li>
+          <img src={near}/>
+          </li>
+          <li>
+          <img src={oasis}/>
+          </li>
+          <li>
+          <img src={silfinance}/>
+          </li>
+          <li>
+          <img src={binancechain}/>
+          </li>
+          <li>
+          <img src={chainlink}/>
+          </li>
+          <li>
+          <img src={huobiECOChain}/>
+          </li>
+          <li>
+          <img src={acala}/>
+          </li>
+          <li>
+          <img src={polkadot}/>
+          </li>
+          <li>
+          <img src={moonswap}/>
+          </li>
+          <li>
+          <img src={nest}/>
+          </li>
+          <li>
+          <img src={fiargame}/>
+          </li>
+          <li>
+          <img src={mercurity}/>
+          </li>
+          <li>
+          <img src={bifrost}/>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </>
   );
+  
+  
 }
 
 export default React.memo(CustomCarousel);
