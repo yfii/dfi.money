@@ -274,8 +274,9 @@ function CustomCarousel(props) {
       </div>
       </div>
     <div ref={ref} className={classes.container}>
-          <div className={classes.productsupportedmine}>
-          <div className={classes.productsupportedtext}>支持YFII单币挖矿项目</div>
+    <div className={classes.productsupportedtext}>
+      支持YFII单币挖矿项目</div>
+      <div className={classes.productsupportedmine}>
         <ul>
           <li>
           <img src={boringdao}/>
@@ -294,8 +295,9 @@ function CustomCarousel(props) {
           </li>
         </ul>
       </div>
-          <div className={classes.productsupportedload}>
-          <div className={classes.productsupportedtext}>支持YFII借贷项目</div>
+      <div className={classes.productsupportedload}>
+      <div className={classes.productsupportedtext}>
+        支持YFII借贷项目</div>
           <ul>
           <li>
           <img src={fortube}/>

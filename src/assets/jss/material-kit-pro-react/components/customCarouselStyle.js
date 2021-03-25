@@ -359,6 +359,10 @@ const customCarouselStyle = {
     }
   },
   productsupportedload: {
+    display: "flex",
+    justifyContent: "center",         
+    alignItems: "center",
+    flexWrap: "wrap",
     textAlign: "center",
     width: "920px",
     height: "220px",
@@ -379,7 +383,7 @@ const customCarouselStyle = {
     "& ul li": {
       display: "flex",
       justifyContent: "center",         
-    alignItems: "center",
+      alignItems: "center",
       textAlign: "center",
       flex: "20%",
       width: "230px",
