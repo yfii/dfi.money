@@ -240,7 +240,7 @@ function CustomCarousel(props) {
           {/* <a target="_blank" className={classes.ecotitlebuttona} href="https://financex.io/">立即访问</a> */}
           </li>
           <li>
-          <img src={ecograpfarmer}/>
+          <img className={classes.ecograpfarmer} src={ecograpfarmer}/>
           <p className={classes.pcontext}>主打YAM玩法的挖矿协议</p>
           <div className={classes.ecotitlebutton}>
             <a target="_blank" className={classes.ecotitlebuttona} href="https://grap.finance/">立即访问</a>

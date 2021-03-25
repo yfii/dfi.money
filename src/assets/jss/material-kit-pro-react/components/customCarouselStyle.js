@@ -246,33 +246,35 @@ const customCarouselStyle = {
   },
   productecoproducts: {
     textAlign: "center",
-    width: "888px",
+    width: "998px",
     height: "650px",
     fontSize: "48px",
     fontFamily: "PingFangSC-Medium, PingFang SC",
     fontWeight: "500",
     color: "#FFFFFF",
     lineHeight: "67px",
-    marginLeft: "36px",
+    // marginLeft: "36px",
     marginTop: "12px",
     "& ul": {
+      width: "948px",
+      height: "650px",
       listStyle: "none",
       display: "flex",
       flexWrap: "wrap",
-      alignContent: "space-around"
+      justifyContent: "center", 
     },
     "& ul li": {
-      flex: "30%",
+      // flex: "30%",
       width: "276px",
       height: "276px",
       background: "#333333",
       borderRadius: "16px",
       marginTop: "20px",
-      marginRight: "16px"
+      marginLeft: "26px"
     },
     "& ul li img": {
       overflow: "hidden",
-      width: "144px",
+      width: "176px",
       height: "70px",
       fontSize: "24px",
       fontFamily: "PingFangSC-Medium, PingFang SC",
