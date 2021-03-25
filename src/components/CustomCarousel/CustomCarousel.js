@@ -226,42 +226,42 @@ function CustomCarousel(props) {
           <li>
           <img src={ecowepiggy}/>
           <p className={classes.pcontext}>一个借货平台</p>
-          {/* <div className={classes.ecotitlebutton}>
+          <div className={classes.ecotitlebutton}>
             <a target="_blank" className={classes.ecotitlebuttona} href="https://wepiggy.com/">立即访问</a>
-          </div> */}
-          <a target="_blank" className={classes.ecotitlebuttona} href="https://wepiggy.com/">立即访问</a>
+          </div>
+          {/* <a target="_blank" className={classes.ecotitlebuttona} href="https://wepiggy.com/">立即访问</a> */}
           </li>
           <li>
           <img src={ecofinancex}/>
           <p className={classes.pcontext}>以太链上期权平台</p>
-          {/* <div className={classes.ecotitlebutton}>
+          <div className={classes.ecotitlebutton}>
             <a target="_blank" className={classes.ecotitlebuttona} href="https://financex.io/">立即访问</a>
-          </div> */}
-          <a target="_blank" className={classes.ecotitlebuttona} href="https://financex.io/">立即访问</a>
+          </div>
+          {/* <a target="_blank" className={classes.ecotitlebuttona} href="https://financex.io/">立即访问</a> */}
           </li>
           <li>
           <img src={ecograpfarmer}/>
           <p className={classes.pcontext}>主打YAM玩法的挖矿协议</p>
-          {/* <div className={classes.ecotitlebutton}>
+          <div className={classes.ecotitlebutton}>
             <a target="_blank" className={classes.ecotitlebuttona} href="https://grap.finance/">立即访问</a>
-          </div> */}
-          <a target="_blank" className={classes.ecotitlebuttona} href="https://grap.finance/">立即访问</a>
+          </div>
+          {/* <a target="_blank" className={classes.ecotitlebuttona} href="https://grap.finance/">立即访问</a> */}
           </li>
           <li>
           <img src={ecosfinance}/>
           <p className={classes.pcontext}>以太链上期权平台</p>
-          {/* <div className={classes.ecotitlebutton}>
+          <div className={classes.ecotitlebutton}>
             <a target="_blank" className={classes.ecotitlebuttona} href="https://s.finance/">立即访问</a>
-          </div> */}
-          <a target="_blank" className={classes.ecotitlebuttona} href="https://s.finance/">立即访问</a>
+          </div>
+          {/* <a target="_blank" className={classes.ecotitlebuttona} href="https://s.finance/">立即访问</a> */}
           </li>
           <li>
           <img src={ecoysd}/>
           <p className={classes.pcontext}>基于YFII的算法稳定币</p>
-          {/* <div className={classes.ecotitlebutton}>
+          <div className={classes.ecotitlebutton}>
             <a target="_blank" className={classes.ecotitlebuttona} href="#/vault">立即访问</a>
-          </div> */}
-          <a target="_blank" className={classes.ecotitlebuttona} href="#/vault">立即访问</a>
+          </div>
+          {/* <a target="_blank" className={classes.ecotitlebuttona} href="#/vault">立即访问</a> */}
           </li>
         </ul>
       </div>

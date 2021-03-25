@@ -199,7 +199,7 @@ const customCarouselStyle = {
   },
   productadvantage: {
     textAlign: "center",
-    width: "688px",
+    width: "988px",
     height: "280px",
     fontSize: "48px",
     fontFamily: "PingFangSC-Medium, PingFang SC",
@@ -213,6 +213,7 @@ const customCarouselStyle = {
       listStyle: "none",
       display: "flex",
       flexWrap: "wrap",
+      justifyContent: "space-around"
     },
     "& ul li": {
       flex: "30%",
@@ -220,7 +221,7 @@ const customCarouselStyle = {
       height: "266px",
       borderRadius: "8px",
       marginTop: "20px",
-      marginRight: "6px"
+      marginRight: "16px"
     },
     "& ul li img": {
       overflow: "hidden",
@@ -258,6 +259,7 @@ const customCarouselStyle = {
       listStyle: "none",
       display: "flex",
       flexWrap: "wrap",
+      alignContent: "space-around"
     },
     "& ul li": {
       flex: "30%",
@@ -288,13 +290,18 @@ const customCarouselStyle = {
       fontWeight: "400",
       color: "#FFFFFF",
       lineHeight: "24px"
-    }
+    },
   },
   ecotitlebutton: {
+    display: "flex",
+    justifyContent: "center",         
+    alignItems: "center",
     width: "160px",
     height: "40px",
     background: "#035EF8",
     borderRadius: "20px",
+    textAlign: "center",
+    marginLeft: "55px"
   },
   ecotitlebuttona: {
     width: "64px",
