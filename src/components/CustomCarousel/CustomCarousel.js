@@ -8,10 +8,10 @@ import ElementResizeDetector from "element-resize-detector";
 
 import ImgUnisave from "assets/img/carousel/unisave-new.png";
 import YFIIMoon from "assets/img/carousel/yfii-moon.png";
-import bgi from "assets/img/home/bgi@2x.png";
-import man from "assets/img/home/man@3x@2x.png";
-import title from "assets/img/home/title@2x.png";
-import YFIIstatue from "assets/img/home/YFIIstatue@2x.png";
+import bgi from "assets/img/home/bgi@1x.png";
+import man from "assets/img/home/man@1x.png";
+import title from "assets/img/home/title@1x.png";
+import YFIIstatue from "assets/img/home/YFIIstatue@1x.png";
 // defi产品Image
 import sakeimg from "assets/img/home/sakeswap@2x.png";
 import ethimg from "assets/img/home/ETH@2x.png";
@@ -25,14 +25,14 @@ import round from "assets/img/home/round@2x.png";
 import boringdao from "assets/img/home/boringdao@2x.png";
 import orbits from "assets/img/home/orbits@2x.png";
 import golff from "assets/img/home/golff@2x.png";
-import wepiggy from "assets/img/home/wepiggy@2x.png";
-import qian_protocol from "assets/img/home/qian_protocol@2x.png";
+import wepiggy from "assets/img/home/wepiggy@1x.png";
+import qian_protocol from "assets/img/home/qian_protocol@1x.png";
 
 // community load image
-import fortube from "assets/img/home/fortube@2x.png";
-import filda from "assets/img/home/filda2x.png";
-import flux from "assets/img/home/flux.png";
-import wepiggyload from "assets/img/home/wepiggy@2x.png";
+import fortube from "assets/img/home/fortube@1x.png";
+import filda from "assets/img/home/filda@1x.png";
+import flux from "assets/img/home/flux@1x.png";
+import wepiggyload from "assets/img/home/wepiggy@1x.png";
 
 // adavantage image
 import adasecurity from "assets/img/home/adasecurity@2x.png";
@@ -40,10 +40,10 @@ import adahighprofit from "assets/img/home/adahighprofit@2x.png";
 import adastrongmanage from "assets/img/home/adastrongmanage@2x.png";
 
 // eco image
-import ecowepiggy from "assets/img/home/wepiggy@2x.png";
-import ecofinancex from "assets/img/home/financex@2x.png";
+import ecowepiggy from "assets/img/home/wepiggy@1x.png";
+import ecofinancex from "assets/img/home/ecofinancex@1x.png";
 import ecograpfarmer from "assets/img/home/grapfarmer@2x.png";
-import ecosfinance from "assets/img/home/s.finance@2x.png";
+import ecosfinance from "assets/img/home/ecos.finance@1x.png";
 import ecoysd from "assets/img/home/ecoysd@2x.png";
 
 // partner image
@@ -240,7 +240,7 @@ function CustomCarousel(props) {
           {/* <a target="_blank" className={classes.ecotitlebuttona} href="https://financex.io/">立即访问</a> */}
           </li>
           <li>
-          <img className={classes.ecograpfarmer} src={ecograpfarmer}/>
+          <img src={ecograpfarmer}/>
           <p className={classes.pcontext}>主打YAM玩法的挖矿协议</p>
           <div className={classes.ecotitlebutton}>
             <a target="_blank" className={classes.ecotitlebuttona} href="https://grap.finance/">立即访问</a>

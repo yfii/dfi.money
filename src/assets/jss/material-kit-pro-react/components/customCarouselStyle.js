@@ -256,12 +256,13 @@ const customCarouselStyle = {
     // marginLeft: "36px",
     marginTop: "12px",
     "& ul": {
-      width: "948px",
+      width: "946px",
       height: "650px",
       listStyle: "none",
       display: "flex",
       flexWrap: "wrap",
-      justifyContent: "center", 
+      justifyContent: "center",         
+      alignItems: "center",
     },
     "& ul li": {
       // flex: "30%",
@@ -270,11 +271,13 @@ const customCarouselStyle = {
       background: "#333333",
       borderRadius: "16px",
       marginTop: "20px",
-      marginLeft: "26px"
+      marginLeft: "26px",
+      textAlign: "center"
     },
     "& ul li img": {
       overflow: "hidden",
-      width: "176px",
+      width: "auto",
+      maxWidth: "220px",
       height: "70px",
       fontSize: "24px",
       fontFamily: "PingFangSC-Medium, PingFang SC",
@@ -282,7 +285,9 @@ const customCarouselStyle = {
       color: "#FFFFFF",
       lineHeight: "33px",
       textAlign: "center",
-      marginRight: "20px"
+      // marginRight: "20px",
+      marginTop: "40px",
+      margin: "auto"
     },
     "& ul li .pcontext": {
       width: "230px",
@@ -350,12 +355,11 @@ const customCarouselStyle = {
     "& ul li img": {
       overflow: "hidden",
       width: "144px",
-      height: "50px",
+      height: "57px",
       fontSize: "24px",
       fontFamily: "PingFangSC-Medium, PingFang SC",
       fontWeight: "500",
       color: "#FFFFFF",
-      lineHeight: "33px",
       textAlign: "center",
       marginRight: "20px"
     }
@@ -398,12 +402,11 @@ const customCarouselStyle = {
     "& ul li img": {
       overflow: "hidden",
       width: "144px",
-      height: "33px",
+      height: "57px",
       fontSize: "24px",
       fontFamily: "PingFangSC-Medium, PingFang SC",
       fontWeight: "500",
       color: "#FFFFFF",
-      lineHeight: "33px",
       textAlign: "center",
       marginRight: "20px"
     }
