@@ -9,8 +9,8 @@ import ElementResizeDetector from "element-resize-detector";
 import ImgUnisave from "assets/img/carousel/unisave-new.png";
 import YFIIMoon from "assets/img/carousel/yfii-moon.png";
 import bgi from "assets/img/home/bgi@1x.png";
-import man from "assets/img/home/man@1x.png";
-import title from "assets/img/home/title@1x.png";
+import man from "assets/img/home/man@2x.png";
+import title from "assets/img/home/title@2x.png";
 import YFIIstatue from "assets/img/home/YFIIstatue@1x.png";
 // defi产品Image
 import sakeimg from "assets/img/home/roundsakeswap@1x.png";
@@ -22,9 +22,9 @@ import hecoimg from "assets/img/home/roundheco@1x.png";
 import round from "assets/img/home/round@1x.png";
 
 // community mine image
-import boringdao from "assets/img/home/boringdao@2x.png";
-import orbits from "assets/img/home/orbits@2x.png";
-import golff from "assets/img/home/golff@2x.png";
+import boringdao from "assets/img/home/boringdao@1x.png";
+import orbits from "assets/img/home/orbits@1x.png";
+import golff from "assets/img/home/golff@1x.png";
 import wepiggy from "assets/img/home/wepiggy@1x.png";
 import qian_protocol from "assets/img/home/qian_protocol@1x.png";
 
@@ -35,33 +35,33 @@ import flux from "assets/img/home/flux@1x.png";
 import wepiggyload from "assets/img/home/wepiggy@1x.png";
 
 // adavantage image
-import adasecurity from "assets/img/home/adasecurity@2x.png";
-import adahighprofit from "assets/img/home/adahighprofit@2x.png";
-import adastrongmanage from "assets/img/home/adastrongmanage@2x.png";
+import adasecurity from "assets/img/home/adasecurity@1x.png";
+import adahighprofit from "assets/img/home/adahighprofit@1x.png";
+import adastrongmanage from "assets/img/home/adastrongmanage@1x.png";
 
 // eco image
 import ecowepiggy from "assets/img/home/wepiggy@1x.png";
-import ecofinancex from "assets/img/home/ecofinancex@1x.png";
-import ecograpfarmer from "assets/img/home/grapfarmer@2x.png";
+import ecofinancex from "assets/img/home/fnxfans@1x.png";
+import ecograpfarmer from "assets/img/home/grapfarmer@1x.png";
 import ecosfinance from "assets/img/home/ecos.finance@1x.png";
-import ecoysd from "assets/img/home/ecoysd@2x.png";
+import ecoysd from "assets/img/home/ecoysd@1x.png";
 
 // partner image
-import near from "assets/img/home/near@2x.png";
-import oasis from "assets/img/home/oasis@2x.png";
-import silfinance from "assets/img/home/silfinance@2x.png";
-import binancechain from "assets/img/home/binancechain@2x.png";
-import chainlink from "assets/img/home/chainlink@2x.png";
+import near from "assets/img/home/near@1x.png";
+import oasis from "assets/img/home/oasis@1x.png";
+import silfinance from "assets/img/home/silfinance@1x.png";
+import binancechain from "assets/img/home/binancechain@1x.png";
+import chainlink from "assets/img/home/chainlink@1x.png";
 
-import huobiECOChain from "assets/img/home/HuobiECOChain@2x.png";
-import acala from "assets/img/home/acala@2x.png";
-import polkadot from "assets/img/home/polkadot@2x.png";
-import moonswap from "assets/img/home/moonswap@2x.png";
-import nest from "assets/img/home/nest@2x.png";
+import huobiECOChain from "assets/img/home/huobiecochain@1x.png";
+import acala from "assets/img/home/acala@1x.png";
+import polkadot from "assets/img/home/polkadot@1x.png";
+import moonswap from "assets/img/home/moonswap@1x.png";
+import nest from "assets/img/home/nest@1x.png";
 
-import fiargame from "assets/img/home/fiargame@2x.png";
-import mercurity from "assets/img/home/mercurity2x.png";
-import bifrost from "assets/img/home/bifrost@2x.png";
+import fiargame from "assets/img/home/fiargame@1x.png";
+import mercurity from "assets/img/home/mercurity@1x.png";
+import bifrost from "assets/img/home/bifrost@1x.png";
 
 import styles from "assets/jss/material-kit-pro-react/components/customCarouselStyle.js";
 
@@ -137,8 +137,8 @@ function CustomCarousel(props) {
               </div>
           </div>
           <div className={classes.alignright}>
-            <img src={man} className={classes.alignright_firstimage}/>
-            <img src={YFIIstatue} className={classes.alignright_nextimage}/>
+            <img src={man} className={classes.alignright_man}/>
+            {/* <img src={YFIIstatue} className={classes.alignright_nextimage}/> */}
           </div>
         </div>
     </div>
@@ -150,14 +150,6 @@ function CustomCarousel(props) {
       </div>
     <div ref={ref} className={classes.container}>
       <div className={classes.productleft}>
-      {/* <img src={round} className={classes.roundimg} />
-      <img src={sakeimg} className={classes.sakeimg} />
-      <img src={ethimg} className={classes.ethimg} />
-      <img src={apollobscimg} className={classes.apollobscimg} />
-      <img src={unisaveimg} className={classes.unisaveimg} />
-      <img src={hecoimg} className={classes.hecoimg} />
-      <img src={ysdimg} className={classes.ysdimg} /> */}
-      {/* <div className={classes.centerpoint}> */}
       <img src={round}/>
       {/* </div> */}
     <div className={classes.surroundbox}>
@@ -165,54 +157,32 @@ function CustomCarousel(props) {
         <img src={ysdimg}/>
         </div>
         <div title="ETH operation tutorial" className={classes.circle4}>
-        <a target="_blank" className={classes.ecotitlebuttona} href="https://docs.dfi.money/#/">
+        <a target="_blank" href="https://docs.dfi.money/#/">
         <img src={ethimg}/>
         </a>
         </div>
         <div className={classes.circle6}>
-        <a target="_blank" className={classes.ecotitlebuttona} href="https://app.unisave.exchange/">
+        <a target="_blank" href="https://app.unisave.exchange/">
         <img src={unisaveimg}/>
         </a>
         </div>
         <div title="BSC operation tutorial" className={classes.circle8}>
-        <a target="_blank" className={classes.ecotitlebuttona} href="https://docs.dfi.money/#/">
+        <a target="_blank"  href="https://docs.dfi.money/#/">
         <img src={apollobscimg}/>
         </a>
         </div>
         <div title="HECO operation tutorial" className={classes.circle10}>
-        <a target="_blank" className={classes.ecotitlebuttona} href="https://docs.dfi.money/#/">
+        <a target="_blank" href="https://docs.dfi.money/#/">
         <img src={hecoimg}/>
         </a>
         </div>
         <div className={classes.circle12}>
-        <a target="_blank" className={classes.ecotitlebuttona} href="https://sakeswap.finance/">
+        <a target="_blank" href="https://sakeswap.finance/">
           <img src={sakeimg}/>
           </a>
         </div>
     </div>
       </div>
-      {/* <div className={classes.productright}>
-        <ul>
-          <li>
-            <a href="#/vault">以太坊机枪池</a>
-          </li>
-          <li>
-            <a href="#/vault">BSC登月舱机枪池</a>
-          </li>
-          <li>
-            <a href="#/vault">HECO登月舱机枪池</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://app.unisave.exchange/#/swap">Unisave</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://sakeswap.finance/">Sakeswap</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://sakeswap.finance/">YSD</a>
-          </li>
-        </ul>
-      </div> */}
       </div>
 
     {/* defi advantage */}
