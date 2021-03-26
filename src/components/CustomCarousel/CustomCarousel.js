@@ -13,13 +13,13 @@ import man from "assets/img/home/man@1x.png";
 import title from "assets/img/home/title@1x.png";
 import YFIIstatue from "assets/img/home/YFIIstatue@1x.png";
 // defi产品Image
-import sakeimg from "assets/img/home/sakeswap@2x.png";
-import ethimg from "assets/img/home/ETH@2x.png";
-import apollobscimg from "assets/img/home/apollobsc@2x.png";
-import ysdimg from "assets/img/home/YSD@2x.png";
-import unisaveimg from "assets/img/home/unisave_logo.png";
-import hecoimg from "assets/img/home/HECO@2x.png";
-import round from "assets/img/home/round@2x.png";
+import sakeimg from "assets/img/home/roundsakeswap@1x.png";
+import ethimg from "assets/img/home/roundeth@1x.png";
+import apollobscimg from "assets/img/home/roundapollobsc@1x.png";
+import ysdimg from "assets/img/home/roundysd@1x.png";
+import unisaveimg from "assets/img/home/roundunisave@1x.png";
+import hecoimg from "assets/img/home/roundheco@1x.png";
+import round from "assets/img/home/round@1x.png";
 
 // community mine image
 import boringdao from "assets/img/home/boringdao@2x.png";
@@ -150,15 +150,38 @@ function CustomCarousel(props) {
       </div>
     <div ref={ref} className={classes.container}>
       <div className={classes.productleft}>
-      <img src={round} className={classes.roundimg} />
-      {/* <img src={sakeimg} className={classes.sakeimg} />
+      {/* <img src={round} className={classes.roundimg} />
+      <img src={sakeimg} className={classes.sakeimg} />
       <img src={ethimg} className={classes.ethimg} />
       <img src={apollobscimg} className={classes.apollobscimg} />
       <img src={unisaveimg} className={classes.unisaveimg} />
       <img src={hecoimg} className={classes.hecoimg} />
       <img src={ysdimg} className={classes.ysdimg} /> */}
+      {/* <div className={classes.centerpoint}> */}
+      <img src={round}/>
+      {/* </div> */}
+    <div className={classes.surroundbox}>
+        <div className={classes.circle2}>
+          <img src={sakeimg}/>
+        </div>
+        <div className={classes.circle4}>
+        <img src={ethimg}/>
+        </div>
+        <div className={classes.circle6}>
+        <img src={apollobscimg}/>
+        </div>
+        <div className={classes.circle8}>
+        <img src={unisaveimg}/>
+        </div>
+        <div className={classes.circle10}>
+        <img src={hecoimg}/>
+        </div>
+        <div className={classes.circle12}>
+        <img src={ysdimg}/>
+        </div>
+    </div>
       </div>
-      <div className={classes.productright}>
+      {/* <div className={classes.productright}>
         <ul>
           <li>
             <a href="#/vault">以太坊机枪池</a>
@@ -179,7 +202,7 @@ function CustomCarousel(props) {
             <a target="_blank" href="https://sakeswap.finance/">YSD</a>
           </li>
         </ul>
-      </div>
+      </div> */}
       </div>
 
     {/* defi advantage */}

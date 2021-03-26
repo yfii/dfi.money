@@ -33,7 +33,7 @@ const customCarouselStyle = {
     marginTop: "94px",
   },
   titleimage: {
-    width: "341px" ,
+    width: "441px" ,
     height: "98px",
     marginLeft: "47px",
     marginTop: "40px",
@@ -108,95 +108,128 @@ const customCarouselStyle = {
     fontWeight: "500",
     color: "#FFFFFF",
     lineHeight: "67px",
-    marginLeft: "36px",
-    marginTop: "12px"
+    marginLeft: "56px",
+    marginTop: "76px",
+    textAlign: "center"
   },
-  roundimg: {
-    width: "450px",
-    height: "450px",
-  },
-  ethimg: {
-    width: "80px",
-    height: "80px",
-    marginLeft: "36px",
-    marginTop: "12px"
-  },
-  sakeimg: {
-    width: "80px",
-    height: "80px",
-    marginLeft: "18px",
-    marginTop: "240px",
-    marginBottom: "12px",
-  },
-  unisaveimg: {
-    width: "80px",
-    height: "80px",
-    marginLeft: "36px",
-    marginTop: "103px",
-  },
-  ysdimg: {
-    width: "80px",
-    height: "80px",
-    marginLeft: "36px",
-    marginTop: "268px",
-    marginBottom: "102px",
-  },
-  apollobscimg: {
-    width: "82px",
-    height: "80px",
-    marginLeft: "334px",
-    marginTop: "102px",
-    marginRight: "34px"
-  },
-  hecoimg: {
-    width: "83px",
-    height: "80px",
-    marginLeft: "334px",
-    marginTop: "268px",
-    marginBottom: "102px",
-    marginRight: "34px",
-  },
-  
-  productright: {
-    flexGrow: "1.5",
-    textAlign: "center",
-    width: "520px",
-    height: "450px",
-    fontSize: "48px",
-    fontFamily: "PingFangSC-Medium, PingFang SC",
-    fontWeight: "500",
-    color: "#FFFFFF",
-    lineHeight: "67px",
-    marginLeft: "36px",
-    marginTop: "12px",
-    "& ul": {
-      listStyle: "none",
-      display: "flex",
-      flexWrap: "wrap",
-      justifyContent: "center",         
-      alignItems: "center",
+
+  surroundbox: {
+        position: "absolute",
+        top:  "50%",
+        left: "50%",
+        width:  "20px",
+        height:  "20px",
+        marginLeft: "-10px",
+        marginTop: "-10px",
     },
-    "& ul li": {
-      flex: "48%",
-      width: "320px",
-      height: "80px",
-      background: "#3D4257",
-      borderRadius: "8px",
-      marginTop: "50px",
-      marginRight: "10px",
-      textAlign: "center"
+    centerpoint: {
+      position: "absolute",
+      top:  "50%",
+      left: "50%",
+      width:  "20px",
+      height:  "20px",
+      marginLeft: "-10px",
+      marginTop: "-10px",
+  },
+    circle: {
+        /* 这里一定要绝对定位，这样位置才能铺开来 */
+        position: "absolute",
+        top:  "-10px",
+        left: "-10px",
+        width: "40px",
+        height:  "40px",
+        lineHeight: "40px",
+        borderRadius:  "50%",
+        textAlign: "center",
     },
-    "& ul li a": {
-      width: "144px",
-      height: "33px",
-      fontSize: "24px",
-      fontFamily: "PingFangSC-Medium, PingFang SC",
-      fontWeight: "500",
-      color: "#FFFFFF",
-      lineHeight: "33px",
+    circle2:{
+      position: "absolute",
+
+      lineHeight: "40px",
+      borderRadius:  "50%",
       textAlign: "center",
-    }
-  },
+        transform: "rotateZ(60deg) translateY(200px)"
+    },
+    circle4:{
+      position: "absolute",
+
+      lineHeight: "40px",
+      borderRadius:  "50%",
+      textAlign: "center",
+        transform: "rotateZ(120deg) translateY(200px)"
+    },
+    circle6:{
+      position: "absolute",
+
+      lineHeight: "40px",
+      borderRadius:  "50%",
+      textAlign: "center",
+        transform: "rotateZ(180deg) translateY(200px)"
+    },
+    circle8:{
+        position: "absolute",
+
+        lineHeight: "40px",
+        borderRadius:  "50%",
+        textAlign: "center",
+        transform: "rotateZ(240deg) translateY(200px)"
+    },
+    circle10:{
+      position: "absolute",
+
+      lineHeight: "40px",
+      borderRadius:  "50%",
+      textAlign: "center",
+        transform: "rotateZ(300deg) translateY(200px)"
+    },
+    circle12:{
+      position: "absolute",
+
+      borderRadius:  "50%",
+      textAlign: "center",
+        transform: "rotateZ(360deg) translateY(200px)"
+    },
+  
+  // productright: {
+  //   flexGrow: "1.5",
+  //   textAlign: "center",
+  //   width: "520px",
+  //   height: "450px",
+  //   fontSize: "48px",
+  //   fontFamily: "PingFangSC-Medium, PingFang SC",
+  //   fontWeight: "500",
+  //   color: "#FFFFFF",
+  //   lineHeight: "67px",
+  //   marginLeft: "36px",
+  //   marginTop: "12px",
+  //   "& ul": {
+  //     listStyle: "none",
+  //     display: "flex",
+  //     flexWrap: "wrap",
+  //     justifyContent: "center",         
+  //     alignItems: "center",
+  //   },
+  //   "& ul li": {
+  //     flex: "48%",
+  //     width: "320px",
+  //     height: "80px",
+  //     background: "#3D4257",
+  //     borderRadius: "8px",
+  //     marginTop: "50px",
+  //     marginRight: "10px",
+  //     textAlign: "center"
+  //   },
+  //   "& ul li a": {
+  //     width: "144px",
+  //     height: "33px",
+  //     fontSize: "24px",
+  //     fontFamily: "PingFangSC-Medium, PingFang SC",
+  //     fontWeight: "500",
+  //     color: "#FFFFFF",
+  //     lineHeight: "33px",
+  //     textAlign: "center",
+  //   }
+  // },
   productadvantage: {
     textAlign: "center",
     width: "988px",
