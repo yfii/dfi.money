@@ -256,8 +256,8 @@ const customCarouselStyle = {
       color: "#FFFFFF",
       textAlign: "center",
       // marginRight: "20px",
-      marginTop: "40px",
-      margin: "auto"
+      marginTop: "60px",
+      marginBottom: "20px"
     },
     "& ul li .pcontext": {
       width: "230px",
@@ -266,7 +266,7 @@ const customCarouselStyle = {
       fontFamily: "PingFangSC-Regular, PingFang SC",
       fontWeight: "400",
       color: "#FFFFFF",
-      lineHeight: "24px"
+      lineHeight: "24px",
     },
   },
   ecotitlebutton: {
@@ -278,10 +278,11 @@ const customCarouselStyle = {
     background: "#035EF8",
     borderRadius: "20px",
     textAlign: "center",
-    marginLeft: "55px"
+    marginLeft: "55px",
+    marginTop: "30px"
   },
   ecotitlebuttona: {
-    width: "64px",
+    width: "auto",
     height: "22px",
     fontSize: "16px",
     fontFamily: "PingFangSC-Medium, PingFang SC",
@@ -364,7 +365,8 @@ const customCarouselStyle = {
   },
   productsupportedtext: {
     textAlign: "center",
-    width: "auto",
+    //attention:keep width
+    width: "235px",
     height: "auto",
     fontSize: "24px",
     fontFamily: "PingFangSC-Medium, PingFang SC",
