@@ -83,9 +83,9 @@ const customCarouselStyle = {
   },
   producttitletext: {
     textAlign: "center",
-    width: "312px",
+    width: "auto",
     height: "auto",
-    fontSize: "36px",
+    fontSize: "32px",
     fontFamily: "PingFangSC-Medium, PingFang SC",
     fontWeight: "500",
     color: "#FFFFFF",
@@ -364,8 +364,8 @@ const customCarouselStyle = {
   },
   productsupportedtext: {
     textAlign: "center",
-    width: "235px",
-    height: "33px",
+    width: "auto",
+    height: "auto",
     fontSize: "24px",
     fontFamily: "PingFangSC-Medium, PingFang SC",
     fontWeight: "500",

@@ -5,6 +5,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Slider from "react-slick";
 import ElementResizeDetector from "element-resize-detector";
+import { useTranslation } from 'react-i18next';
 
 import ImgUnisave from "assets/img/carousel/unisave-new.png";
 import YFIIMoon from "assets/img/carousel/yfii-moon.png";
@@ -114,6 +115,7 @@ function useResize() {
 function CustomCarousel(props) {
   // const {  } = props;
 
+  const { t } = useTranslation();
   const classes = useStyles();
 
   const [ref, rect] = useResize();
@@ -145,7 +147,7 @@ function CustomCarousel(props) {
     {/* defi product */}
     <div className={classes.producttitle}>
       <div className={classes.producttitletext}>
-            DFI的产品
+      {t('Home-dfiproducts')}
       </div>
       </div>
     <div ref={ref} className={classes.container}>
@@ -188,7 +190,7 @@ function CustomCarousel(props) {
     {/* defi advantage */}
     <div className={classes.producttitle}>
       <div className={classes.producttitletext}>
-        DFI的优势
+      {t('Home-dfiadvantage')}
       </div>
       </div>
     <div ref={ref} className={classes.container}>
@@ -199,7 +201,7 @@ function CustomCarousel(props) {
           <p>安全优势</p>
           {/* <span>所有正式上线的DFI.Money产品将在至少一家权威安全机构完成审核后才会发布。任何新业务类型都将优先考虑用户资产安全。</span> */}
           {/* en:https://github.com/sec-bit/yfii-security-review/blob/master/200803-YFII-Token-Pool1-Pool2.en.md */}
-          <p>点击此处查看我们的<a target="_blank" href="https://github.com/sec-bit/yfii-security-review/blob/master/200803-YFII-Token-Pool1-Pool2.md">审计报告</a></p>
+          <p>点击此处查看我们的<a target="_blank" href={t('Home-dfisecurityadvantage')}>审计报告</a></p>
           </li>
           <li>
           <img src={adahighprofit}/>
@@ -221,7 +223,7 @@ function CustomCarousel(props) {
     {/* defi eco products */}
     <div className={classes.producttitle}>
       <div className={classes.producttitletext}>
-        DFI生态项目
+      {t('Home-dfiecoprojects')}
       </div>
       </div>
     <div ref={ref} className={classes.container}>
@@ -274,12 +276,12 @@ function CustomCarousel(props) {
       {/* defi community supported products */}
       <div className={classes.producttitle}>
       <div className={classes.producttitletext}>
-        DFI社区支持的项目
+      {t('Home-dficommunityprojects')}
       </div>
       </div>
     <div ref={ref} className={classes.container}>
     <div className={classes.productsupportedtext}>
-      支持YFII单币挖矿项目</div>
+    {t('Home-dficommunityprojectsmine')}</div>
       <div className={classes.productsupportedmine}>
         <ul>
           <li>
@@ -301,7 +303,7 @@ function CustomCarousel(props) {
       </div>
       <div className={classes.productsupportedload}>
       <div className={classes.productsupportedtext}>
-        支持YFII借贷项目</div>
+      {t('Home-dficommunityprojectsload')}</div>
           <ul>
           <li>
           <img src={fortube}/>
@@ -322,7 +324,7 @@ function CustomCarousel(props) {
       {/* defi eco products */}
       <div className={classes.producttitle}>
       <div className={classes.producttitletext}>
-      其它合作伙伴
+      {t('Home-dfipartners')}
       </div>
       </div>
     <div ref={ref} className={classes.container}>
