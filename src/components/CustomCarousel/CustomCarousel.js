@@ -145,7 +145,7 @@ function CustomCarousel(props) {
     {/* defi product */}
     <div className={classes.producttitle}>
       <div className={classes.producttitletext}>
-        DFI的产品
+            DFI的产品
       </div>
       </div>
     <div ref={ref} className={classes.container}>
@@ -162,26 +162,32 @@ function CustomCarousel(props) {
       {/* </div> */}
     <div className={classes.surroundbox}>
         <div className={classes.circle2}>
-        <a target="_blank" className={classes.ecotitlebuttona} href="https://sakeswap.finance/">
-          <img src={sakeimg}/>
-          </a>
+        <img src={ysdimg}/>
         </div>
-        <div className={classes.circle4}>
+        <div title="ETH operation tutorial" className={classes.circle4}>
+        <a target="_blank" className={classes.ecotitlebuttona} href="https://docs.dfi.money/#/">
         <img src={ethimg}/>
+        </a>
         </div>
         <div className={classes.circle6}>
-        <img src={apollobscimg}/>
-        </div>
-        <div className={classes.circle8}>
         <a target="_blank" className={classes.ecotitlebuttona} href="https://app.unisave.exchange/">
         <img src={unisaveimg}/>
         </a>
         </div>
-        <div className={classes.circle10}>
+        <div title="BSC operation tutorial" className={classes.circle8}>
+        <a target="_blank" className={classes.ecotitlebuttona} href="https://docs.dfi.money/#/">
+        <img src={apollobscimg}/>
+        </a>
+        </div>
+        <div title="HECO operation tutorial" className={classes.circle10}>
+        <a target="_blank" className={classes.ecotitlebuttona} href="https://docs.dfi.money/#/">
         <img src={hecoimg}/>
+        </a>
         </div>
         <div className={classes.circle12}>
-        <img src={ysdimg}/>
+        <a target="_blank" className={classes.ecotitlebuttona} href="https://sakeswap.finance/">
+          <img src={sakeimg}/>
+          </a>
         </div>
     </div>
       </div>
