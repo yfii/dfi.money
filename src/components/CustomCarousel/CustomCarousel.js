@@ -162,7 +162,9 @@ function CustomCarousel(props) {
       {/* </div> */}
     <div className={classes.surroundbox}>
         <div className={classes.circle2}>
+        <a target="_blank" className={classes.ecotitlebuttona} href="https://sakeswap.finance/">
           <img src={sakeimg}/>
+          </a>
         </div>
         <div className={classes.circle4}>
         <img src={ethimg}/>
@@ -171,7 +173,9 @@ function CustomCarousel(props) {
         <img src={apollobscimg}/>
         </div>
         <div className={classes.circle8}>
+        <a target="_blank" className={classes.ecotitlebuttona} href="https://app.unisave.exchange/">
         <img src={unisaveimg}/>
+        </a>
         </div>
         <div className={classes.circle10}>
         <img src={hecoimg}/>

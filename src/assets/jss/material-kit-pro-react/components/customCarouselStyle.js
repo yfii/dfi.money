@@ -108,7 +108,7 @@ const customCarouselStyle = {
     fontWeight: "500",
     color: "#FFFFFF",
     lineHeight: "67px",
-    marginLeft: "56px",
+    marginLeft: "59px",
     marginTop: "76px",
     textAlign: "center"
   },
