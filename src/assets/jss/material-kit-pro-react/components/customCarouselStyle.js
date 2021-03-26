@@ -132,7 +132,7 @@ const customCarouselStyle = {
       lineHeight: "40px",
       borderRadius:  "50%",
       textAlign: "center",
-        transform: "rotateZ(60deg) translateY(200px)"
+        transform: "rotateZ(60deg) translateY(170px)"
     },
     circle4:{
       position: "absolute",
@@ -140,7 +140,7 @@ const customCarouselStyle = {
       lineHeight: "40px",
       borderRadius:  "50%",
       textAlign: "center",
-        transform: "rotateZ(120deg) translateY(200px)"
+        transform: "rotateZ(120deg) translateY(170px)"
     },
     circle6:{
       position: "absolute",
@@ -148,7 +148,7 @@ const customCarouselStyle = {
       lineHeight: "40px",
       borderRadius:  "50%",
       textAlign: "center",
-        transform: "rotateZ(180deg) translateY(200px)"
+        transform: "rotateZ(180deg) translateY(170px)"
     },
     circle8:{
         position: "absolute",
@@ -156,7 +156,7 @@ const customCarouselStyle = {
         lineHeight: "40px",
         borderRadius:  "50%",
         textAlign: "center",
-        transform: "rotateZ(240deg) translateY(200px)"
+        transform: "rotateZ(240deg) translateY(170px)"
     },
     circle10:{
       position: "absolute",
@@ -164,14 +164,14 @@ const customCarouselStyle = {
       lineHeight: "40px",
       borderRadius:  "50%",
       textAlign: "center",
-        transform: "rotateZ(300deg) translateY(200px)"
+        transform: "rotateZ(300deg) translateY(170px)"
     },
     circle12:{
       position: "absolute",
 
       borderRadius:  "50%",
       textAlign: "center",
-        transform: "rotateZ(360deg) translateY(200px)"
+        transform: "rotateZ(360deg) translateY(170px)"
     },
   productadvantage: {
     textAlign: "center",

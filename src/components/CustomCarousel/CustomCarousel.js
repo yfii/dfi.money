@@ -156,19 +156,19 @@ function CustomCarousel(props) {
         <div className={classes.circle2}>
         <img src={ysdimg}/>
         </div>
-        <div title="ETH operation tutorial" className={classes.circle4}>
+        <div title="BSC operation tutorial" className={classes.circle4}>
+        <a target="_blank" href="https://docs.dfi.money/#/">
+        <img src={apollobscimg}/>
+        </a>
+        </div>
+        <div title="ETH operation tutorial" className={classes.circle6}>
         <a target="_blank" href="https://docs.dfi.money/#/">
         <img src={ethimg}/>
         </a>
         </div>
-        <div className={classes.circle6}>
-        <a target="_blank" href="https://docs.dfi.money/#/">
-        <img src={hecoimg}/>
-        </a>
-        </div>
-        <div title="BSC operation tutorial" className={classes.circle8}>
+        <div title="HECO operation tutorial" className={classes.circle8}>
         <a target="_blank"  href="https://docs.dfi.money/#/">
-        <img src={apollobscimg}/>
+        <img src={hecoimg}/>
         </a>
         </div>
         <div title="HECO operation tutorial" className={classes.circle10}>
