@@ -202,19 +202,21 @@ function CustomCarousel(props) {
           <p>{t('Home-safety')}</p>
           {/* <span>所有正式上线的DFI.Money产品将在至少一家权威安全机构完成审核后才会发布。任何新业务类型都将优先考虑用户资产安全。</span> */}
           {/* en:https://github.com/sec-bit/yfii-security-review/blob/master/200803-YFII-Token-Pool1-Pool2.en.md */}
-          <p>{t('Home-clickview')}<a target="_blank" href={t('Home-dfisecurityadvantage')}> {t('Home-report')}</a></p>
+          <span>{t('Home-clickview')}
+          <a target="_blank" href={t('Home-dfisecurityadvantage')}> {t('Home-report')}</a>
+          </span>
           </li>
           <li>
           <img src={adahighprofit}/>
           <p>{t('Home-highprofits')}</p>
           {/* <span>除了基本的长期挖矿策略，BSC和Heco链上的机枪池还为用户提供了中短期超高收益策略。创新性的使用可插拔技术，帮助开发者快速切换策略，为用户捕获头矿高额收益。</span> */}
-          <p>{t('Home-clickview')}<a target="_blank" href=""> {t('Home-strategy')}</a></p>
+          <span>{t('Home-clickview')}<a target="_blank" href="https://stats.dfi.money/"> {t('Home-strategy')}</a></span>
           </li>
           <li>
           <img src={adastrongmanage}/>
           <p>{t('Home-powerfulgov')}</p>
           {/* <span>积极的开发、营销和运营团队，可靠的资助委员会，持续的行动。从项目挖掘开始，DFI.Money核心开发团队对协议治理有了更积极、更负责任的考虑，它将与社区共同构建独特的DAO价值和科学的治理框架。</span> */}
-          <p>{t('Home-clickview')}<a target="_blank" href="https://gov.dfi.money/c/grants/13"> {t('Home-progress')}</a></p>
+          <span>{t('Home-clickview')}<a target="_blank" href="https://gov.dfi.money/c/grants/13"> {t('Home-progress')}</a></span>
             
           </li>
         </ul>

@@ -5,7 +5,12 @@
   "Nav-Farm": "挖矿",
   "Nav-lp": "博物馆",
   "Nav-inactive": "博物馆",
-  "Nav-info": "仪表盘",  
+  "Nav-info": "仪表盘",
+  "Nav-Gov": "治理",
+  "Nav-GovLink": "https://gov.dfi.money/c/grants/13",
+  "Nav-Guides": "操作指南",
+  "Nav-GuidesLink": "https://www.yuque.com/yfiicommunity/faq",
+  "Nav-Social": "联系",
   "Foot-Token": "通证合约",
   "Foot-Forum": "论坛",
   "Foot-Audit": "审计",
@@ -168,5 +173,5 @@
   "Liquidity-SnackBarText": "关于机枪池存LP的说明",
   "Liquidity-SnackBarUrl": "https://www.yuque.com/yfiicommunity/faq/mn9r5m",
   "Liquidity-Selete": "选择币种",
-  "yfii-moon-landing": "YFII"
+  "yfii-moon-landing": "DFI.Money"
 }

@@ -38,7 +38,9 @@ export default function HeaderLinks(props) {
     // {value:'farm',label:t('Nav-Farm')},
     // {value:'liquidity',label:t('Nav-inactive')},
     // {value:'inactive',label:t('Nav-inactive')},
-    // {value:'info',label:t('Nav-info'),externalLink:'https://yieldfarming.unisave.exchange/'},    
+    {value:'gov',label:t('Nav-Gov'),externalLink:t('Nav-GovLink')},
+    {value:'guides',label:t('Nav-Guides'),externalLink:t('Nav-GuidesLink')},
+    // {value:'social',label:t('Nav-Social'),externalLink:t('Nav-GuidesLink')},
   ]
 
   useEffect(() => {

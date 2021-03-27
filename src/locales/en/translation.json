@@ -4,7 +4,12 @@
   "Nav-Stake": "Stake",
   "Nav-Farm": "Farm",
   "Nav-lp": "Lp",
-  "Nav-inactive": "Inactive",  
+  "Nav-inactive": "Inactive",
+  "Nav-Gov": "Gov",
+  "Nav-GovLink": "https://gov.dfi.money/c/grants/13",
+  "Nav-Guides": "Guides",
+  "Nav-GuidesLink": "https://docs.dfi.money/#/",
+  "Nav-Social": "Social",
   "Foot-Token": "Token Contract",
   "Foot-Forum": "Forum",
   "Foot-Audit": "Audit",
@@ -164,5 +169,5 @@
   "Liquidity-SnackBarText": "LP pool description",
   "Liquidity-SnackBarUrl": "https://www.yuque.com/yfiicommunity/faq/fkz9gm",
   "Liquidity-Selete": "Select currency",
-  "yfii-moon-landing": "YFII Project Apollo"
+  "yfii-moon-landing": "DFI.Money"
 }

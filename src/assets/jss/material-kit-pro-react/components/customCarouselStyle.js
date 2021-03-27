@@ -208,14 +208,24 @@ const customCarouselStyle = {
       color: "#FFFFFF",
       lineHeight: "33px",
       textAlign: "center",
-      marginRight: "20px"
+      marginRight: "20px",
+      marginBottom: "30px"
     },
-    "& ul li span": {
-      width: "336px",
-      height: "90px",
-      fontSize: "16px",
+    "& ul li p": {
+      width: "auto",
+      height: "auto",
+      fontSize: "24px",
       fontFamily: "PingFangSC-Regular, PingFang SC",
       fontWeight: "400",
+      color: "#FFFFFF",
+    },
+    "& ul li span": {
+      width: "auto",
+      height: "auto",
+      fontSize: "16px",
+      fontFamily: "PingFangSC-Regular, PingFang SC",
+      fontWeight: "500",
+      lineHeight: "22px",
       color: "#FFFFFF",
     }
   },
@@ -256,7 +266,7 @@ const customCarouselStyle = {
       color: "#FFFFFF",
       textAlign: "center",
       // marginRight: "20px",
-      marginTop: "60px",
+      marginTop: "40px",
       marginBottom: "20px"
     },
     "& ul li .pcontext": {
