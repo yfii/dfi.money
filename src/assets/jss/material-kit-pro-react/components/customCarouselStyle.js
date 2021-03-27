@@ -391,6 +391,7 @@ const customCarouselStyle = {
       alignItems: "center",
     },
     "& ul li": {
+      position: "relative",
       width: "309px",
       height: "115px",
       background: "#3D4257",
@@ -400,13 +401,44 @@ const customCarouselStyle = {
       alignItems: "center",
       textAlign: "center"
     },
+    
     "& ul li img": {
       overflow: 'hidden',
       width: "auto",
       height: "auto",
       marginTop: "40px",
       textAlign: "center",
-    }
+    },
+  //   "& ul li img:nth-child(2)": {
+  //     content: 'view',
+  //     color: "#ffffff",
+  //     position: "absolute",
+  //     marginTop: "-25px",
+  //     marginLeft: "-15px",
+  //     textAlign: "center",
+  // },
+
+  "& ul li img:nth-child(2)" : {
+    position: "absolute",
+    top: "-65px",
+    //note: need to set right
+    right: "0px",
+},
+"& ul li img:nth-child(2):before":{
+    position: "absolute",
+    content: "",
+    top: "50%",
+    left: "50%",
+    transform: "translate3d(-50%, -50%, 0)"
+},
+"& ul li img:nth-child(2):after":
+  {
+    position: "absolute",
+    content: "",
+    top: "50%",
+    left: "50%",
+    transform: "translate3d(-50%, -50%, 0)"
+}
   },
   slider: {
     width: "100%",

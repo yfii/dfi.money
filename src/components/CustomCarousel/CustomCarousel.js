@@ -63,6 +63,7 @@ import nest from "assets/img/home/nest@1x.png";
 import fiargame from "assets/img/home/fiargame@1x.png";
 import mercurity from "assets/img/home/mercurity@1x.png";
 import bifrost from "assets/img/home/bifrost@1x.png";
+import video from "assets/img/home/video.png";
 
 import styles from "assets/jss/material-kit-pro-react/components/customCarouselStyle.js";
 
@@ -331,19 +332,31 @@ function CustomCarousel(props) {
       <div className={classes.productpartner}>
         <ul>
           <li>
+          <a target="_blank" href="https://sakeswap.finance/">
           <img src={near}/>
+          <img src={video}/>
+          </a>
           </li>
           <li>
+          <a target="_blank" href="https://sakeswap.finance/">
           <img src={oasis}/>
+          <img src={video}/>
+          </a>
           </li>
           <li>
+          <a target="_blank" href="https://sakeswap.finance/">
           <img src={silfinance}/>
+          <img src={video}/>
+          </a>
           </li>
           <li>
           <img src={binancechain}/>
           </li>
           <li>
+          <a target="_blank" href="https://sakeswap.finance/">
           <img src={chainlink}/>
+          <img src={video}/>
+          </a>
           </li>
           <li>
           <img src={huobiECOChain}/>
@@ -358,16 +371,25 @@ function CustomCarousel(props) {
           <img src={moonswap}/>
           </li>
           <li>
+          <a target="_blank" href="https://sakeswap.finance/">
           <img src={nest}/>
+          <img src={video}/>
+          </a>
           </li>
           <li>
           <img src={fiargame}/>
           </li>
           <li>
+          <a target="_blank" href="https://sakeswap.finance/">
           <img src={mercurity}/>
+          <img src={video}/>
+          </a>
           </li>
           <li>
+          <a target="_blank" href="https://sakeswap.finance/">
           <img src={bifrost}/>
+          <img src={video}/>
+          </a>
           </li>
         </ul>
       </div>
