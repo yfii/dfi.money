@@ -177,7 +177,7 @@ const container = {
     maxWidth: "960px"
   },
   "@media (min-width: 1230px)": {
-    maxWidth: "1230px"    // '1230px - 30px margin = 1200px', which is better in huge display
+    maxWidth: "1240px"    // '1230px - 30px margin = 1200px', which is better in huge display
   }
 };
 
