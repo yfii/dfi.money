@@ -1,3 +1,5 @@
+import zIndex from "@material-ui/core/styles/zIndex";
+
 const customCarouselStyle = {
     container: {
       display: "flex",
@@ -12,20 +14,8 @@ const customCarouselStyle = {
         width: "auto",
         height: "auto",
         flexWrap: "wrap",
-        // justifyContent: "center",     
+        justifyContent: "center",  
         alignItems: "center",
-        // "@media (min-width: 576px)": {
-        //   maxWidth: "540px"
-        // },
-        // "@media (min-width: 768px)": {
-        //   maxWidth: "720px"
-        // },
-        // "@media (min-width: 992px)": {
-        //   maxWidth: "960px"
-        // },
-        // "@media (min-width: 1230px)": {
-        //   maxWidth: "3840px"    // '1230px - 30px margin = 1200px', which is better in huge display
-        // }
       },
       alignleft: {
         overflow:"hidden",
@@ -43,7 +33,6 @@ const customCarouselStyle = {
         height:"342px",
         marginTop: "94px",
         marginBottom: "50px",
-        marginLeft:"127px"
       },
       titleimage: {
         overflow: "hidden",
@@ -104,7 +93,7 @@ const customCarouselStyle = {
         lineHeight: "28px",
       },
     },
-    "@media (min-width: 1230px)": {
+    "@media (min-width: 576px)": {
       aligntop: {
         display: "flex",
         width: "auto",
@@ -209,12 +198,45 @@ const customCarouselStyle = {
 
   surroundbox: {
         position: "absolute",
+        cursor: "pointer",
         top:  "50%",
         left: "50%",
         width:  "20px",
         height:  "20px",
         marginLeft: "-33px",
         marginTop: "5px",
+        // "& div:nth-child(1):hover:after": {
+        //   position: "absolute",
+        //   left: "15px",
+        //   top: "5px",
+        //   padding: "5px",
+        //   backgroundColor: "#0095ff",
+        //   borderRadius: "5px",
+        //   color: "#fff",
+        //   /*这里显示的内容为表格中自定义的labelTooltip属性对应的值*/
+        //   content: "attr(" + "labelTooltipfasfasfasdffffafasdfasfasfasd)",
+        //   zIndex: "2",
+        //   width: "120px"
+        // },
+
+        // "& img:nth-child(1)": {
+        //   transform:"rotate(-60deg)"
+        // },
+        // "& img:nth-child(2)": {
+        //   transform:"rotate(0)"
+        // },
+        // "& img:nth-child(3)": {
+        //   transform:"rotate(-180deg)"
+        // },
+        // "& img:nth-child(4)": {
+        //   transform:"rotate(-240deg)"
+        // },
+        // "& img:nth-child(5)": {
+        //   transform:"rotate(-300deg)"
+        // },
+        // "& img:nth-child(6)": {
+        //   transform:"rotate(-360deg)"
+        // },
     },
     centerpoint: {
       position: "absolute",
@@ -292,7 +314,7 @@ const customCarouselStyle = {
     fontWeight: "500",
     color: "#FFFFFF",
     lineHeight: "67px",
-    marginLeft: "36px",
+    // marginLeft: "36px",
     marginTop: "12px",
     // marginBottom: "20px",
     "& ul": {
@@ -353,7 +375,7 @@ const customCarouselStyle = {
       listStyle: "none",
       display: "flex",
       flexWrap: "wrap",
-      justifyContent: "center",         
+      justifyContent: "center",    
       alignItems: "center",
     },
     "& ul li": {
@@ -414,7 +436,7 @@ const customCarouselStyle = {
   },
   productsupportedmine: {
     textAlign: "center",
-    width: "1920px",
+    width: "auto",
     height: "auto",
     fontSize: "48px",
     fontFamily: "PingFangSC-Medium, PingFang SC",
@@ -426,14 +448,13 @@ const customCarouselStyle = {
       listStyle: "none",
       display: "flex",
       flexWrap: "wrap",
-      justifyContent: "center",         
+      justifyContent: "center",       
       alignItems: "center",
     },
     "& ul li": {
       display: "flex",
-      justifyContent: "center",         
+      justifyContent: "center",       
       alignItems: "center",
-      textAlign: "center",
       width: "230px",
       height: "115px",
       background: "#3D4257",
@@ -454,7 +475,7 @@ const customCarouselStyle = {
     alignItems: "center",
     flexWrap: "wrap",
     textAlign: "center",
-    width: "1920px",
+    width: "auto",
     height: "auto",
     marginTop: "30px",
     "& ul": {
@@ -468,7 +489,6 @@ const customCarouselStyle = {
       display: "flex",
       justifyContent: "center",         
       alignItems: "center",
-      textAlign: "center",
       width: "230px",
       height: "115px",
       marginTop: "20px",

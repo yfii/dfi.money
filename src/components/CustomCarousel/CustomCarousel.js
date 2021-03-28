@@ -129,6 +129,9 @@ function CustomCarousel(props) {
     <div className={classes.container}>
       {/* first section */}
         <div className={classes.aligntop}>
+        {/* <div className={classes.aligntop} style={{
+          backgroundImage: "url(" + bgi + ")"
+        }} */}
           <div className={classes.alignleft}>
           <img src={title} className={classes.titleimage} />
           <div className={classes.title}>Deposit to Earn !</div>
@@ -154,30 +157,30 @@ function CustomCarousel(props) {
       <img src={round}/>
       {/* </div> */}
     <div className={classes.surroundbox}>
-        <div className={classes.circle2}>
+        <div title={t('Home-dfiproducts-ysd')} className={classes.circle2}>
         <img src={ysdimg}/>
         </div>
-        <div title="BSC operation tutorial" className={classes.circle4}>
+        <div title={t('Home-dfiproducts-bsc')} className={classes.circle4}>
         <a target="_blank" href="https://docs.dfi.money/#/">
         <img src={apollobscimg}/>
         </a>
         </div>
-        <div title="ETH operation tutorial" className={classes.circle6}>
+        <div title={t('Home-dfiproducts-eth')} className={classes.circle6}>
         <a target="_blank" href="https://docs.dfi.money/#/">
         <img src={ethimg}/>
         </a>
         </div>
-        <div title="HECO operation tutorial" className={classes.circle8}>
+        <div title={t('Home-dfiproducts-heco')} className={classes.circle8}>
         <a target="_blank"  href="https://docs.dfi.money/#/">
         <img src={hecoimg}/>
         </a>
         </div>
-        <div title="HECO operation tutorial" className={classes.circle10}>
+        <div title={t('Home-dfiproducts-unisave')} className={classes.circle10}>
         <a target="_blank" href="https://app.unisave.exchange/">
         <img src={unisaveimg}/>
         </a>
         </div>
-        <div className={classes.circle12}>
+        <div title={t('Home-dfiproducts-sake')} className={classes.circle12}>
         <a target="_blank" href="https://sakeswap.finance/">
           <img src={sakeimg}/>
           </a>
@@ -242,7 +245,7 @@ function CustomCarousel(props) {
           <img src={ecofinancex}/>
           <p className={classes.pcontext}>{t('Home-optionsplatform')}</p>
           <div className={classes.ecotitlebutton}>
-            <a target="_blank" className={classes.ecotitlebuttona} href="https://financex.io/">{t('Home-visitnow')}</a>
+            <a target="_blank" className={classes.ecotitlebuttona} href="https://www.yuque.com/fnxfans">{t('Home-visitnow')}</a>
           </div>
           {/* <a target="_blank" className={classes.ecotitlebuttona} href="https://financex.io/">立即访问</a> */}
           </li>
@@ -332,7 +335,7 @@ function CustomCarousel(props) {
       <div className={classes.productpartner}>
         <ul>
           <li>
-          <a target="_blank" href="https://sakeswap.finance/">
+          <a target="_blank" href="https://mp.weixin.qq.com/s/QocGJvdDFHyacO4qOfS0DQ">
           <img src={near}/>
           <img src={video}/>
           </a>
@@ -344,7 +347,7 @@ function CustomCarousel(props) {
           </a>
           </li>
           <li>
-          <a target="_blank" href="https://sakeswap.finance/">
+          <a target="_blank" href="https://mp.weixin.qq.com/s/K1WvjF5Nq1aqB0HvBWmXjw">
           <img src={silfinance}/>
           <img src={video}/>
           </a>
@@ -353,7 +356,7 @@ function CustomCarousel(props) {
           <img src={binancechain}/>
           </li>
           <li>
-          <a target="_blank" href="https://sakeswap.finance/">
+          <a target="_blank" href="https://mp.weixin.qq.com/s/5GAXHoOoe7u6KDDQuVZmoQ">
           <img src={chainlink}/>
           <img src={video}/>
           </a>
@@ -371,7 +374,7 @@ function CustomCarousel(props) {
           <img src={moonswap}/>
           </li>
           <li>
-          <a target="_blank" href="https://sakeswap.finance/">
+          <a target="_blank" href="https://mp.weixin.qq.com/s/s4d70RTrTMToXfKpJDEoiQ">
           <img src={nest}/>
           <img src={video}/>
           </a>
