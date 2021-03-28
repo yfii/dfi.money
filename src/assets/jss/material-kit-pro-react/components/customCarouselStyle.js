@@ -125,9 +125,9 @@ const customCarouselStyle = {
       },
       alignright_man: {
         overflow: "hidden",
-        width:"450px",
-        height:"415px",
-        marginTop: "34px",
+        width:"470px",
+        height:"auto",
+        marginTop: "114px",
         marginBottom: "50px",
       },
       titleimage: {
