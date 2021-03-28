@@ -6,102 +6,185 @@ const customCarouselStyle = {
       alignItems: "center",
       flexWrap: "wrap",
     },
-  aligntop: {
-    display: "flex",
-    width: "3840px",
-    height: "auto",
-    flexWrap: "wrap",
-    // justifyContent: "center",     
-    alignItems: "center",
-    // "@media (min-width: 576px)": {
-    //   maxWidth: "540px"
-    // },
-    // "@media (min-width: 768px)": {
-    //   maxWidth: "720px"
-    // },
-    // "@media (min-width: 992px)": {
-    //   maxWidth: "960px"
-    // },
-    // "@media (min-width: 1230px)": {
-    //   maxWidth: "3840px"    // '1230px - 30px margin = 1200px', which is better in huge display
-    // }
-  },
-  alignleft: {
-    overflow:"hidden",
-    width:'auto',
-    height:"auto",
-  },
-  alignright: {
-    overflow:"hidden",
-    width:'auto',
-    height:"auto",
-  },
-  alignright_man: {
-    overflow: "hidden",
-    width:"auto",
-    height:"342px",
-    marginTop: "94px",
-    marginBottom: "50px",
-    marginLeft:"127px"
-  },
-  titleimage: {
-    overflow: "hidden",
-    width: "212px" ,
-    height: "41px",
-    marginLeft: "147px",
-    marginTop: "63px",
-    marginRight: "247px",
-  },
-  title: {
-    width: "166px",
-    height: "28px",
-    fontSize: "24px",
-    fontFamily: "DINAlternate-Bold, DINAlternate",
-    fontWeight: "bold",
-    color: "#FFFFFF",
-    lineHeight: "56px",
-    marginLeft: "147px",
-    marginTop: "59px",
-    marginBottom: "60px",
-    marginRight: "60px"
-  },
-  titlenext: {
-    width: "338px",
-    height: "40px",
-    fontSize: "14px",
-    fontFamily: "PingFangSC-Regular, PingFang SC",
-    fontWeight: "400",
-    color: "#FFFFFF",
-    lineHeight: "33px",
-    marginLeft: "146px",
-    marginTop: "58px",
-    marginRight: "60px"
-  },
-  titlebutton: {
-    display: "flex",
-    justifyContent: "center",         
-    alignItems: "center",
-    width: "240px",
-    height: "40px",
-    fontSize: "24px",
-    fontFamily: "PingFangSC-Regular, PingFang SC",
-    fontWeight: "400",
-    backgroundColor: "#FF2E83",
-    borderRadius: "30px",
-    lineHeight: "33px",
-    marginLeft: "146px",
-    marginTop: "60px",
-    marginRight: "60px"
-  },
-  titlebuttona: {
-    width: "140px",
-    height: "28px",
-    fontSize: "20px",
-    fontFamily: "PingFangSC-Regular, PingFang SC",
-    fontWeight: "500",
-    color: "#FFFFFF",
-    lineHeight: "28px",
-  },
+    "@media (max-width: 576px)": {
+      aligntop: {
+        display: "flex",
+        width: "auto",
+        height: "auto",
+        flexWrap: "wrap",
+        // justifyContent: "center",     
+        alignItems: "center",
+        // "@media (min-width: 576px)": {
+        //   maxWidth: "540px"
+        // },
+        // "@media (min-width: 768px)": {
+        //   maxWidth: "720px"
+        // },
+        // "@media (min-width: 992px)": {
+        //   maxWidth: "960px"
+        // },
+        // "@media (min-width: 1230px)": {
+        //   maxWidth: "3840px"    // '1230px - 30px margin = 1200px', which is better in huge display
+        // }
+      },
+      alignleft: {
+        overflow:"hidden",
+        width:'auto',
+        height:"auto",
+      },
+      alignright: {
+        overflow:"hidden",
+        width:'auto',
+        height:"auto",
+      },
+      alignright_man: {
+        overflow: "hidden",
+        width:"auto",
+        height:"342px",
+        marginTop: "94px",
+        marginBottom: "50px",
+        marginLeft:"127px"
+      },
+      titleimage: {
+        overflow: "hidden",
+        width: "212px" ,
+        height: "41px",
+        marginLeft: "147px",
+        marginTop: "63px",
+        marginRight: "247px",
+      },
+      title: {
+        width: "166px",
+        height: "28px",
+        fontSize: "24px",
+        fontFamily: "DINAlternate-Bold, DINAlternate",
+        fontWeight: "bold",
+        color: "#FFFFFF",
+        lineHeight: "56px",
+        marginLeft: "147px",
+        marginTop: "59px",
+        marginBottom: "60px",
+        marginRight: "60px"
+      },
+      titlenext: {
+        width: "338px",
+        height: "40px",
+        fontSize: "14px",
+        fontFamily: "PingFangSC-Regular, PingFang SC",
+        fontWeight: "400",
+        color: "#FFFFFF",
+        lineHeight: "33px",
+        marginLeft: "146px",
+        marginTop: "58px",
+        marginRight: "60px"
+      },
+      titlebutton: {
+        display: "flex",
+        justifyContent: "center",         
+        alignItems: "center",
+        width: "240px",
+        height: "40px",
+        fontSize: "24px",
+        fontFamily: "PingFangSC-Regular, PingFang SC",
+        fontWeight: "400",
+        backgroundColor: "#FF2E83",
+        borderRadius: "30px",
+        lineHeight: "33px",
+        marginLeft: "146px",
+        marginTop: "60px",
+        marginRight: "60px"
+      },
+      titlebuttona: {
+        width: "140px",
+        height: "28px",
+        fontSize: "20px",
+        fontFamily: "PingFangSC-Regular, PingFang SC",
+        fontWeight: "500",
+        color: "#FFFFFF",
+        lineHeight: "28px",
+      },
+    },
+    "@media (min-width: 1230px)": {
+      aligntop: {
+        display: "flex",
+        width: "auto",
+        height: "auto",
+        flexWrap: "wrap",
+        // justifyContent: "center",     
+        alignItems: "center",
+      },
+      alignleft: {
+        overflow:"hidden",
+        width:'auto',
+        height:"auto",
+      },
+      alignright: {
+        overflow:"hidden",
+        width:'auto',
+        height:"auto",
+      },
+      alignright_man: {
+        overflow: "hidden",
+        width:"450px",
+        height:"415px",
+        marginTop: "34px",
+        marginBottom: "50px",
+      },
+      titleimage: {
+        overflow: "hidden",
+        width: "441px" ,
+        height: "98px",
+        marginLeft: "47px",
+        marginTop: "63px",
+        marginRight: "247px",
+      },
+      title: {
+        width: "331px",
+        height: "56px",
+        fontSize: "48px",
+        fontFamily: "DINAlternate-Bold, DINAlternate",
+        fontWeight: "bold",
+        color: "#FFFFFF",
+        lineHeight: "56px",
+        marginLeft: "47px",
+        marginTop: "59px",
+        marginBottom: "60px",
+        marginRight: "60px"
+      },
+      titlenext: {
+        width: "632px",
+        height: "66px",
+        fontSize: "24px",
+        fontFamily: "PingFangSC-Regular, PingFang SC",
+        fontWeight: "400",
+        color: "#FFFFFF",
+        lineHeight: "33px",
+        marginLeft: "46px",
+        marginTop: "58px",
+        marginRight: "60px"
+      },
+      titlebutton: {
+        display: "flex",
+        justifyContent: "center",         
+        alignItems: "center",
+        width: "300px",
+        height: "60px",
+        backgroundColor: "#FF2E83",
+        borderRadius: "30px",
+        marginLeft: "46px",
+        marginTop: "60px",
+        marginRight: "60px"
+      },
+      titlebuttona: {
+        width: "140px",
+        height: "28px",
+        fontSize: "20px",
+        fontFamily: "PingFangSC-Regular, PingFang SC",
+        fontWeight: "500",
+        color: "#FFFFFF",
+        lineHeight: "28px",
+      },
+    },
   producttitle: {
     display: "flex",
     justifyContent: "center",         
