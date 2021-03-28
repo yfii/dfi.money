@@ -128,9 +128,7 @@ function CustomCarousel(props) {
     <>
     <div className={classes.container}>
       {/* first section */}
-        <div className={classes.aligntop} style={{
-          backgroundImage: "url(" + bgi + ")"
-        }}>
+        <div className={classes.aligntop}>
           <div className={classes.alignleft}>
           <img src={title} className={classes.titleimage} />
           <div className={classes.title}>Deposit to Earn !</div>
