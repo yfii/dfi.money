@@ -269,7 +269,7 @@ function CustomCarousel(props) {
           <img src={ecoysd}/>
           <p className={classes.pcontext}>{t('Home-algorithmicstablecoin')}</p>
           <div className={classes.ecotitlebutton}>
-            <a target="_blank" className={classes.ecotitlebuttona} href="#/vault">{t('Home-visitnow')}</a>
+            <a target="_blank" className={classes.ecotitlebuttona} href="https://mp.weixin.qq.com/s/4A4CsDdvDEbJObEal1cufQ">{t('Home-visitnow')}</a>
           </div>
           {/* <a target="_blank" className={classes.ecotitlebuttona} href="#/vault">立即访问</a> */}
           </li>
