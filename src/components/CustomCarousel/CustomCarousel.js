@@ -157,18 +157,21 @@ function CustomCarousel(props) {
           <ul>
             <li><img src={ethimg}/></li>
             <li>{t('Home-dfiproducts-eth')}</li>
+            <li><img src={YFIIstatue}/></li>
           </ul>
         </div>
         <div className={classes.productstripbsc}>
         <ul>
             <li><img src={apollobscimg}/></li>
             <li>{t('Home-dfiproducts-bsc')}</li>
+            <li><img src={YFIIstatue}/></li>
           </ul>
         </div>
         <div className={classes.productstripheco}>
         <ul>
             <li><img src={hecoimg}/></li>
             <li>{t('Home-dfiproducts-heco')}</li>
+            <li><img src={YFIIstatue}/></li>
           </ul>
         </div>
       </div>
@@ -302,7 +305,7 @@ function CustomCarousel(props) {
       {t('Home-dficommunityprojects')}
       </div>
       </div>
-    <div ref={ref} className={classes.container}>
+    {/* <div ref={ref} className={classes.container}> */}
     <div className={classes.productsupportedtext}>
     {t('Home-dficommunityprojectsmine')}</div>
       <div className={classes.productsupportedmine}>
@@ -324,9 +327,10 @@ function CustomCarousel(props) {
           </li>
         </ul>
       </div>
-      <div className={classes.productsupportedload}>
       <div className={classes.productsupportedtext}>
       {t('Home-dficommunityprojectsload')}</div>
+      <div className={classes.productsupportedload}>
+      
           <ul>
           <li>
           <img src={fortube}/>
@@ -342,7 +346,7 @@ function CustomCarousel(props) {
           </li>
         </ul>
           </div>
-      </div>
+      {/* </div> */}
 
       {/* defi eco products */}
       <div className={classes.producttitle}>

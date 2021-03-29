@@ -101,10 +101,13 @@ const customCarouselStyle = {
         height: "auto",
         marginTop: "6px",
         "& ul": {
+          padding: "0",
           listStyle: "none",
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-around"
+          justifyContent: "space-around",
+          background: "#3D4257",
+          borderRadius: "16px",
         },
         "& ul li": {
           width: "auto",
@@ -131,10 +134,11 @@ const customCarouselStyle = {
           lineHeight: "22px",
         },
         "& ul li img": {
-          width: "auto",
-          height: "auto",
+          width: "70px",
+          height: "70px",
           marginRight: "20px",
           marginBottom: "20px",
+          marginTop: "20px",
         },
       },
     
@@ -147,10 +151,13 @@ const customCarouselStyle = {
         height: "auto",
         marginTop: "6px",
         "& ul": {
+          padding: "0",
           listStyle: "none",
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-around"
+          justifyContent: "space-around",
+          background: "#3D4257",
+          borderRadius: "16px",
         },
         "& ul li": {
           display: "center",
@@ -178,10 +185,11 @@ const customCarouselStyle = {
           lineHeight: "22px",
         },
         "& ul li img": {
-          width: "auto",
-          height: "auto",
+          width: "70px",
+          height: "70px",
           marginRight: "20px",
           marginBottom: "20px",
+          marginTop: "20px",
         },
       },
     
@@ -194,10 +202,13 @@ const customCarouselStyle = {
         height: "auto",
         marginTop: "6px",
         "& ul": {
+          padding: "0",
           listStyle: "none",
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-around"
+          justifyContent: "space-around",
+          background: "#3D4257",
+          borderRadius: "16px",
         },
         "& ul li": {
           display: "flex",
@@ -225,10 +236,11 @@ const customCarouselStyle = {
           lineHeight: "22px",
         },
         "& ul li img": {
-          width: "auto",
-          height: "auto",
+          width: "70px",
+          height: "70px",
           marginRight: "20px",
           marginBottom: "20px",
+          marginTop: "20px",
         },
       },
     },
@@ -313,6 +325,7 @@ const customCarouselStyle = {
         lineHeight: "28px",
       },
       productstripeth: {
+        padding: "0",
         listStyle: "none",
         display: "flex",
         justifyContent: "center",         
@@ -321,10 +334,13 @@ const customCarouselStyle = {
         height: "auto",
         marginTop: "6px",
         "& ul": {
+          padding: "0",
           listStyle: "none",
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-around"
+          justifyContent: "space-around",
+          background: "#3D4257",
+          borderRadius: "16px",
         },
         "& ul li": {
           width: "auto",
@@ -351,13 +367,15 @@ const customCarouselStyle = {
           lineHeight: "22px",
         },
         "& ul li img": {
-          width: "auto",
-          height: "auto",
-          marginRight: "20px",
-        },
+          width: "70px",
+          height: "70px",
+          marginLeft: "20px",
+          marginRight: "20px"
+        }
       },
     
       productstripbsc: {
+        padding: "0",
         listStyle: "none",
         display: "flex",
         justifyContent: "center",         
@@ -366,10 +384,13 @@ const customCarouselStyle = {
         height: "auto",
         marginTop: "6px",
         "& ul": {
+          padding: "0",
           listStyle: "none",
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-around"
+          justifyContent: "space-around",
+          background: "#3D4257",
+          borderRadius: "16px",
         },
         "& ul li": {
           display: "center",
@@ -397,13 +418,15 @@ const customCarouselStyle = {
           lineHeight: "22px",
         },
         "& ul li img": {
-          width: "auto",
-          height: "auto",
-          marginRight: "20px",
-        },
+          width: "70px",
+          height: "70px",
+          marginLeft: "20px",
+          marginRight: "20px"
+        }
       },
     
       productstripheco: {
+        padding: "0",
         listStyle: "none",
         display: "flex",
         justifyContent: "center",         
@@ -412,10 +435,13 @@ const customCarouselStyle = {
         height: "auto",
         marginTop: "6px",
         "& ul": {
+          padding: "0",
           listStyle: "none",
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-around"
+          justifyContent: "space-around",
+          background: "#3D4257",
+          borderRadius: "16px",
         },
         "& ul li": {
           display: "flex",
@@ -425,6 +451,7 @@ const customCarouselStyle = {
           height: "auto",
           borderRadius: "16px",
           textAlign: "center",
+          
         },
         "& ul li:nth-child(2)": {
           display: "flex",
@@ -443,10 +470,11 @@ const customCarouselStyle = {
           lineHeight: "22px",
         },
         "& ul li img": {
-          width: "auto",
-          height: "auto",
-          marginRight: "20px",
-        },
+          width: "70px",
+          height: "70px",
+          marginLeft: "20px",
+          marginRight: "20px"
+        }
       },
     },
   producttitle: {
@@ -456,6 +484,7 @@ const customCarouselStyle = {
     marginTop: "160px"
   },
   producttitletext: {
+    position: "relative",
     textAlign: "center",
     width: "auto",
     height: "auto",
@@ -464,10 +493,11 @@ const customCarouselStyle = {
     fontWeight: "500",
     color: "#FFFFFF",
     marginBottom: "36px",
-    "& producttitletext:hover + unisavetooltiptext":{
-      visibility: "visible",
+
   },
-  },
+  "producttitletext:hover + unisavetooltiptext":{
+    visibility: "visible",
+},
 
   productstrip: {
     width: "auto",
@@ -711,6 +741,7 @@ const customCarouselStyle = {
     // marginLeft: "36px",
     marginTop: "12px",
     "& ul": {
+      padding: "0",
       listStyle: "none",
       display: "flex",
       flexWrap: "wrap",
@@ -777,13 +808,9 @@ const customCarouselStyle = {
     textAlign: "center",
     width: "auto",
     height: "auto",
-    fontSize: "48px",
-    fontFamily: "PingFangSC-Medium, PingFang SC",
-    fontWeight: "500",
-    color: "#FFFFFF",
-    lineHeight: "67px",
     marginTop: "12px",
     "& ul": {
+      padding: "0",
       listStyle: "none",
       display: "flex",
       flexWrap: "wrap",
@@ -809,15 +836,16 @@ const customCarouselStyle = {
     }
   },
   productsupportedload: {
-    display: "flex",
-    justifyContent: "center",         
-    alignItems: "center",
-    flexWrap: "wrap",
+    // display: "flex",
+    // justifyContent: "center",         
+    // alignItems: "center",
+    // flexWrap: "wrap",
     textAlign: "center",
     width: "auto",
     height: "auto",
     marginTop: "30px",
     "& ul": {
+      padding: "0",
       listStyle: "none",
       display: "flex",
       flexWrap: "wrap",
@@ -843,9 +871,10 @@ const customCarouselStyle = {
     }
   },
   productsupportedtext: {
+    padding: "0",
     textAlign: "center",
     //attention:keep width
-    width: "235px",
+    width: "auto",
     height: "auto",
     fontSize: "24px",
     fontFamily: "PingFangSC-Medium, PingFang SC",
@@ -863,6 +892,7 @@ const customCarouselStyle = {
     height: "auto",
     marginTop: "30px",
     "& ul": {
+      padding: "0",
       listStyle: "none",
       display: "flex",
       flexWrap: "wrap",
