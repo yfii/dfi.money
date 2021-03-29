@@ -843,7 +843,7 @@ const customCarouselStyle = {
     textAlign: "center",
     width: "auto",
     height: "auto",
-    marginTop: "30px",
+    marginTop: "12px",
     "& ul": {
       padding: "0",
       listStyle: "none",
