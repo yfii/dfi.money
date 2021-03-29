@@ -110,6 +110,7 @@ const customCarouselStyle = {
           borderRadius: "16px",
         },
         "& ul li": {
+          display: "flex",
           width: "auto",
           height: "auto",
           borderRadius: "16px",
@@ -134,9 +135,8 @@ const customCarouselStyle = {
           lineHeight: "22px",
         },
         "& ul li img": {
-          width: "70px",
+          width: "auto",
           height: "70px",
-          marginRight: "20px",
           marginBottom: "20px",
           marginTop: "20px",
         },
@@ -160,7 +160,7 @@ const customCarouselStyle = {
           borderRadius: "16px",
         },
         "& ul li": {
-          display: "center",
+          display: "flex",
           width: "auto",
           height: "auto",
           borderRadius: "16px",
@@ -185,9 +185,8 @@ const customCarouselStyle = {
           lineHeight: "22px",
         },
         "& ul li img": {
-          width: "70px",
+          width: "auto",
           height: "70px",
-          marginRight: "20px",
           marginBottom: "20px",
           marginTop: "20px",
         },
@@ -236,9 +235,8 @@ const customCarouselStyle = {
           lineHeight: "22px",
         },
         "& ul li img": {
-          width: "70px",
+          width: "auto",
           height: "70px",
-          marginRight: "20px",
           marginBottom: "20px",
           marginTop: "20px",
         },
@@ -338,13 +336,15 @@ const customCarouselStyle = {
           listStyle: "none",
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-around",
+          justifyContent: "center",         
+          alignItems: "center",
           background: "#3D4257",
           borderRadius: "16px",
         },
         "& ul li": {
+          display: "flex",
           width: "auto",
-          height: "auto",
+          height: "100px",
           borderRadius: "16px",
           textAlign: "center",
           justifyContent: "center",
@@ -365,12 +365,17 @@ const customCarouselStyle = {
           fontFamily: "PingFangSC-Medium, PingFang SC",
           fontWeight: "500",
           lineHeight: "22px",
+          
         },
         "& ul li img": {
-          width: "70px",
-          height: "70px",
+          display: "flex",
+          justifyContent: "center",         
+          alignItems: "center",
+          textAlign: "center",
+          width: "auto",
+          height: "80px",
           marginLeft: "20px",
-          marginRight: "20px"
+          marginRight: "20px",
         }
       },
     
@@ -393,10 +398,9 @@ const customCarouselStyle = {
           borderRadius: "16px",
         },
         "& ul li": {
-          display: "center",
+          display: "flex",
           width: "auto",
-          height: "auto",
-          borderRadius: "16px",
+          height: "100px",
           textAlign: "center",
           justifyContent: "center",
           alignItems: "center",
@@ -418,10 +422,10 @@ const customCarouselStyle = {
           lineHeight: "22px",
         },
         "& ul li img": {
-          width: "70px",
-          height: "70px",
+          width: "auto",
+          height: "80px",
           marginLeft: "20px",
-          marginRight: "20px"
+          marginRight: "20px",
         }
       },
     
@@ -448,8 +452,7 @@ const customCarouselStyle = {
           justifyContent: "center",
           alignItems: "center",
           width: "auto",
-          height: "auto",
-          borderRadius: "16px",
+          height: "100px",
           textAlign: "center",
           
         },
@@ -470,10 +473,10 @@ const customCarouselStyle = {
           lineHeight: "22px",
         },
         "& ul li img": {
-          width: "70px",
-          height: "70px",
+          width: "auto",
+          height: "80px",
           marginLeft: "20px",
-          marginRight: "20px"
+          marginRight: "20px",
         }
       },
     },
