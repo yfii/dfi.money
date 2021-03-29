@@ -92,6 +92,145 @@ const customCarouselStyle = {
         color: "#FFFFFF",
         lineHeight: "28px",
       },
+      productstripeth: {
+        listStyle: "none",
+        display: "flex",
+        justifyContent: "center",         
+        alignItems: "center",
+        width: "auto",
+        height: "auto",
+        marginTop: "6px",
+        "& ul": {
+          listStyle: "none",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around"
+        },
+        "& ul li": {
+          width: "auto",
+          height: "auto",
+          borderRadius: "16px",
+          textAlign: "center",
+          justifyContent: "center",
+          alignItems: "center",
+        },
+        "& ul li:nth-child(2)": {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+          width: "auto",
+          height: "auto",
+          borderRadius: "16px",
+          fontSize: "20px",
+          textAlign: "center",
+          color: "#FFFFFF",
+          background: "#3D4257",
+          fontFamily: "PingFangSC-Medium, PingFang SC",
+          fontWeight: "500",
+          lineHeight: "22px",
+        },
+        "& ul li img": {
+          width: "auto",
+          height: "auto",
+          marginRight: "20px",
+          marginBottom: "20px",
+        },
+      },
+    
+      productstripbsc: {
+        listStyle: "none",
+        display: "flex",
+        justifyContent: "center",         
+        alignItems: "center",
+        width: "auto",
+        height: "auto",
+        marginTop: "6px",
+        "& ul": {
+          listStyle: "none",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around"
+        },
+        "& ul li": {
+          display: "center",
+          width: "auto",
+          height: "auto",
+          borderRadius: "16px",
+          textAlign: "center",
+          justifyContent: "center",
+          alignItems: "center",
+        },
+        "& ul li:nth-child(2)": {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+          width: "auto",
+          height: "auto",
+          borderRadius: "16px",
+          fontSize: "20px",
+          textAlign: "center",
+          color: "#FFFFFF",
+          background: "#3D4257",
+          fontFamily: "PingFangSC-Medium, PingFang SC",
+          fontWeight: "500",
+          lineHeight: "22px",
+        },
+        "& ul li img": {
+          width: "auto",
+          height: "auto",
+          marginRight: "20px",
+          marginBottom: "20px",
+        },
+      },
+    
+      productstripheco: {
+        listStyle: "none",
+        display: "flex",
+        justifyContent: "center",         
+        alignItems: "center",
+        width: "auto",
+        height: "auto",
+        marginTop: "6px",
+        "& ul": {
+          listStyle: "none",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around"
+        },
+        "& ul li": {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "auto",
+          height: "auto",
+          borderRadius: "16px",
+          textAlign: "center",
+        },
+        "& ul li:nth-child(2)": {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+          width: "auto",
+          height: "auto",
+          fontSize: "20px",
+          borderRadius: "16px",
+          textAlign: "center",
+          color: "#FFFFFF",
+          background: "#3D4257",
+          fontFamily: "PingFangSC-Medium, PingFang SC",
+          fontWeight: "500",
+          lineHeight: "22px",
+        },
+        "& ul li img": {
+          width: "auto",
+          height: "auto",
+          marginRight: "20px",
+          marginBottom: "20px",
+        },
+      },
     },
     "@media (min-width: 576px)": {
       aligntop: {
@@ -173,6 +312,142 @@ const customCarouselStyle = {
         color: "#FFFFFF",
         lineHeight: "28px",
       },
+      productstripeth: {
+        listStyle: "none",
+        display: "flex",
+        justifyContent: "center",         
+        alignItems: "center",
+        width: "auto",
+        height: "auto",
+        marginTop: "6px",
+        "& ul": {
+          listStyle: "none",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around"
+        },
+        "& ul li": {
+          width: "auto",
+          height: "auto",
+          borderRadius: "16px",
+          textAlign: "center",
+          justifyContent: "center",
+          alignItems: "center",
+        },
+        "& ul li:nth-child(2)": {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+          width: "800px",
+          height: "auto",
+          borderRadius: "16px",
+          fontSize: "20px",
+          textAlign: "center",
+          color: "#FFFFFF",
+          background: "#3D4257",
+          fontFamily: "PingFangSC-Medium, PingFang SC",
+          fontWeight: "500",
+          lineHeight: "22px",
+        },
+        "& ul li img": {
+          width: "auto",
+          height: "auto",
+          marginRight: "20px",
+        },
+      },
+    
+      productstripbsc: {
+        listStyle: "none",
+        display: "flex",
+        justifyContent: "center",         
+        alignItems: "center",
+        width: "auto",
+        height: "auto",
+        marginTop: "6px",
+        "& ul": {
+          listStyle: "none",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around"
+        },
+        "& ul li": {
+          display: "center",
+          width: "auto",
+          height: "auto",
+          borderRadius: "16px",
+          textAlign: "center",
+          justifyContent: "center",
+          alignItems: "center",
+        },
+        "& ul li:nth-child(2)": {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+          width: "800px",
+          height: "auto",
+          borderRadius: "16px",
+          fontSize: "20px",
+          textAlign: "center",
+          color: "#FFFFFF",
+          background: "#3D4257",
+          fontFamily: "PingFangSC-Medium, PingFang SC",
+          fontWeight: "500",
+          lineHeight: "22px",
+        },
+        "& ul li img": {
+          width: "auto",
+          height: "auto",
+          marginRight: "20px",
+        },
+      },
+    
+      productstripheco: {
+        listStyle: "none",
+        display: "flex",
+        justifyContent: "center",         
+        alignItems: "center",
+        width: "auto",
+        height: "auto",
+        marginTop: "6px",
+        "& ul": {
+          listStyle: "none",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around"
+        },
+        "& ul li": {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "auto",
+          height: "auto",
+          borderRadius: "16px",
+          textAlign: "center",
+        },
+        "& ul li:nth-child(2)": {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+          width: "800px",
+          height: "auto",
+          fontSize: "20px",
+          borderRadius: "16px",
+          textAlign: "center",
+          color: "#FFFFFF",
+          background: "#3D4257",
+          fontFamily: "PingFangSC-Medium, PingFang SC",
+          fontWeight: "500",
+          lineHeight: "22px",
+        },
+        "& ul li img": {
+          width: "auto",
+          height: "auto",
+          marginRight: "20px",
+        },
+      },
     },
   producttitle: {
     display: "flex",
@@ -188,9 +463,18 @@ const customCarouselStyle = {
     fontFamily: "PingFangSC-Medium, PingFang SC",
     fontWeight: "500",
     color: "#FFFFFF",
-    marginBottom: "36px"
+    marginBottom: "36px",
+    "& producttitletext:hover + unisavetooltiptext":{
+      visibility: "visible",
   },
-  productleft: {
+  },
+
+  productstrip: {
+    width: "auto",
+    height: "auto",
+  },
+  
+  productround: {
     width: "auto",
     height: "auto",
     marginTop: "76px",
@@ -260,12 +544,30 @@ const customCarouselStyle = {
     },
     circle2:{
       position: "absolute",
+      // display: "inline-block",
+      // borderBottom: "1px dotted black",
 
       lineHeight: "40px",
       borderRadius:  "50%",
       textAlign: "center",
-        transform: "rotateZ(60deg) translateY(170px)"
+        transform: "rotateZ(60deg) translateY(170px)",
+        "& circle2:hover + unisavetooltiptext":{
+          visibility: "visible",
+      },
     },
+    unisavetooltiptext:{
+      visibility: "hidden",
+      width: "220px",
+      backgroundColor: "red",
+      color: "#fff",
+      textAlign: "center",
+      borderRadius: "6px",
+      padding: "5px 0",
+      /* 定位 */
+      position: "absolute",
+      zIndex: "1",
+  },
+  
     circle4:{
       position: "absolute",
 
@@ -276,28 +578,65 @@ const customCarouselStyle = {
     },
     circle6:{
       position: "absolute",
+      // display: "inline-block",
+      // borderBottom: "1px dotted black",
 
       lineHeight: "40px",
       borderRadius:  "50%",
       textAlign: "center",
-        transform: "rotateZ(180deg) translateY(170px)"
+        transform: "rotateZ(180deg) translateY(170px)",
+        
     },
+    saketooltiptext:{
+      visibility: "hidden",
+      width: "220px",
+      backgroundColor: "red",
+      color: "#fff",
+      textAlign: "center",
+      borderRadius: "6px",
+      padding: "5px 0",
+      /* 定位 */
+      position: "absolute",
+      zIndex: "1",
+  },
+  "circle6:hover + saketooltiptext":{
+      visibility: "visible",
+  },
     circle8:{
         position: "absolute",
 
         lineHeight: "40px",
         borderRadius:  "50%",
         textAlign: "center",
-        transform: "rotateZ(240deg) translateY(170px)"
+        transform: "rotateZ(240deg) translateY(170px)",
+
     },
     circle10:{
       position: "absolute",
+      // display: "inline-block",
+      // borderBottom: "1px dotted black",
 
       lineHeight: "40px",
       borderRadius:  "50%",
       textAlign: "center",
-        transform: "rotateZ(300deg) translateY(170px)"
+      transform: "rotateZ(300deg) translateY(170px)",
+      
     },
+    ysdtooltiptext:{
+      visibility: "hidden",
+      width: "220px",
+      backgroundColor: "red",
+      color: "#fff",
+      textAlign: "center",
+      borderRadius: "6px",
+      padding: "5px 0",
+      /* 定位 */
+      position: "absolute",
+      zIndex: "1",
+  },
+  "circle10:hover + ysdtooltiptext":{
+      visibility: "visible",
+  },
     circle12:{
       position: "absolute",
 

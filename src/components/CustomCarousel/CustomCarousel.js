@@ -152,34 +152,53 @@ function CustomCarousel(props) {
       {t('Home-dfiproducts')}
       </div>
       </div>
+      <div className={classes.productstrip}>
+        <div className={classes.productstripeth}>
+          <ul>
+            <li><img src={ethimg}/></li>
+            <li>{t('Home-dfiproducts-eth')}</li>
+          </ul>
+        </div>
+        <div className={classes.productstripbsc}>
+        <ul>
+            <li><img src={apollobscimg}/></li>
+            <li>{t('Home-dfiproducts-bsc')}</li>
+          </ul>
+        </div>
+        <div className={classes.productstripheco}>
+        <ul>
+            <li><img src={hecoimg}/></li>
+            <li>{t('Home-dfiproducts-heco')}</li>
+          </ul>
+        </div>
+      </div>
     <div ref={ref} className={classes.container}>
-      <div className={classes.productleft}>
+      
+      <div className={classes.productround}>
       <img src={round}/>
       {/* </div> */}
     <div className={classes.surroundbox}>
-        <div title={t('Home-dfiproducts-ysd')} className={classes.circle2}>
+        <span className={classes.unisavetooltiptext}>{t('Home-dfiproducts-unisave')}</span>
+        <span className={classes.saketooltiptext}>{t('Home-dfiproducts-sake')}</span>
+        <span className={classes.ysdtooltiptext}>{t('Home-dfiproducts-ysd')}</span>
+        {/* <div className={classes.circle2}>
+        
+        </div> */}
+        <div title={t('Home-dfiproducts-ysd')} className={classes.circle4}>
         <img src={ysdimg}/>
         </div>
-        <div title={t('Home-dfiproducts-bsc')} className={classes.circle4}>
-        <a target="_blank" href="https://docs.dfi.money/#/">
-        <img src={apollobscimg}/>
-        </a>
-        </div>
-        <div title={t('Home-dfiproducts-eth')} className={classes.circle6}>
-        <a target="_blank" href="https://docs.dfi.money/#/">
-        <img src={ethimg}/>
-        </a>
-        </div>
-        <div title={t('Home-dfiproducts-heco')} className={classes.circle8}>
-        <a target="_blank"  href="https://docs.dfi.money/#/">
-        <img src={hecoimg}/>
-        </a>
-        </div>
-        <div title={t('Home-dfiproducts-unisave')} className={classes.circle10}>
+        {/* <div className={classes.circle6}>
+        
+        </div> */}
+        <div title={t('Home-dfiproducts-unisave')} className={classes.circle8}>
+        
         <a target="_blank" href="https://app.unisave.exchange/">
         <img src={unisaveimg}/>
         </a>
         </div>
+        {/* <div className={classes.circle10}>
+        
+        </div> */}
         <div title={t('Home-dfiproducts-sake')} className={classes.circle12}>
         <a target="_blank" href="https://sakeswap.finance/">
           <img src={sakeimg}/>
@@ -341,10 +360,7 @@ function CustomCarousel(props) {
           </a>
           </li>
           <li>
-          <a target="_blank" href="https://sakeswap.finance/">
           <img src={oasis}/>
-          <img src={video}/>
-          </a>
           </li>
           <li>
           <a target="_blank" href="https://mp.weixin.qq.com/s/K1WvjF5Nq1aqB0HvBWmXjw">
@@ -383,16 +399,10 @@ function CustomCarousel(props) {
           <img src={fiargame}/>
           </li>
           <li>
-          <a target="_blank" href="https://sakeswap.finance/">
           <img src={mercurity}/>
-          <img src={video}/>
-          </a>
           </li>
           <li>
-          <a target="_blank" href="https://sakeswap.finance/">
           <img src={bifrost}/>
-          <img src={video}/>
-          </a>
           </li>
         </ul>
       </div>
