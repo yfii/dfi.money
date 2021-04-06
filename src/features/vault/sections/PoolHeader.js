@@ -111,7 +111,7 @@ export default function PoolHeader({ index, pool, classes, openedCardList, openC
                         <Grid item xs={3} container justify='center' alignItems="center">
                             <Grid item style={{ textAlign: "center" }}>
                                 <Typography className={classes.iconContainerMainTitle} variant="body2" gutterBottom noWrap>{forMat(formattedEarned)} { pool.earnedToken }</Typography>
-                                <Typography className={classes.iconContainerSubTitle} variant="body2">Earned</Typography>
+                                <Typography className={classes.iconContainerSubTitle} variant="body2">{t('Vault-Earned')}</Typography>
                             </Grid>
                         </Grid>
                         <Grid item xs={12} md={3} container justify='center' alignItems="center">

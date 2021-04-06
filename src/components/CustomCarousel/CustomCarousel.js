@@ -134,8 +134,8 @@ function CustomCarousel(props) {
         }} */}
           <div className={classes.alignleft}>
           <img src={title} className={classes.titleimage} />
-          <div className={classes.title}>Deposit to Earn !</div>
-          <div className={classes.titlenext}>A DeFi-farming aggregator that automatically puts your crypto assets to work for high yield profits.</div>
+          <div className={classes.title}>{t('Home-dfiproducts-title')}</div>
+          <div className={classes.titlenext}>{t('Home-dfiproducts-titletext')}</div>
           <div className={classes.titlebutton}>
             <a className={classes.titlebuttona} href="#/vault">{t('Home-dfiproducts-button')}</a>
               </div>

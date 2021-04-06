@@ -43,7 +43,7 @@ const customCarouselStyle = {
         marginRight: "247px",
       },
       title: {
-        width: "166px",
+        // width: "166px",
         height: "28px",
         fontSize: "24px",
         fontFamily: "DINAlternate-Bold, DINAlternate",
@@ -85,7 +85,7 @@ const customCarouselStyle = {
         marginRight: "60px"
       },
       titlebuttona: {
-        width: "140px",
+        // width: "140px",
         height: "28px",
         fontSize: "20px",
         fontFamily: "PingFangSC-Regular, PingFang SC",
@@ -278,7 +278,7 @@ const customCarouselStyle = {
         marginRight: "247px",
       },
       title: {
-        width: "331px",
+        // width: "331px",
         height: "56px",
         fontSize: "48px",
         fontFamily: "DINAlternate-Bold, DINAlternate",
@@ -316,7 +316,7 @@ const customCarouselStyle = {
         marginRight: "60px"
       },
       titlebuttona: {
-        width: "140px",
+        // width: "140px",
         height: "28px",
         fontSize: "20px",
         fontFamily: "PingFangSC-Regular, PingFang SC",

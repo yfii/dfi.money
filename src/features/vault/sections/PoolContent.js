@@ -213,7 +213,7 @@ export default function PoolContent({ index, pool, classes, openedCardList, open
                       color="primary"
                       onClick={() => onGetReward()}
                       >
-                      {isGetRewardPending ? `Claiming`: `Claim`}
+                      {isGetRewardPending ? `${t('Vault-ClaimING')}`: `${t('Vault-ClaimButton')}`}
                   </Button>
                   <Button
                       style={{
@@ -230,7 +230,7 @@ export default function PoolContent({ index, pool, classes, openedCardList, open
                       color="primary"
                       onClick={() => onExit()}
                       >
-                      {isExitPending ? `Exiting`: `Exit`}
+                      {isExitPending ? `${t('Vault-ExitING')}`: `${t('Vault-ExitButton')}`}
                   </Button>
               </div>
           </Grid>

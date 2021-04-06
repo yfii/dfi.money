@@ -40,20 +40,21 @@ import {
   } from "assets/jss/material-kit-pro-react.js";
 const useStyles = makeStyles(styles);
 
-const footerLinkArr = [
-    {content:'Token Contract',href:'https://bscscan.com/token/0x7F70642d88cf1C4a3a7abb072B53B929b653edA5'},
-    // {content:'CoinMarketCap',href:'https://coinmarketcap.com/zh/currencies/yearn-finance-ii/'},
-    // {content:'CoinGecko',href:'https://www.coingecko.com/en/coins/dfi-money'},
-    {content:'Forum',href:'https://gov.dfi.money/'},
-    // {content:'Stats',href:'https://stats.dfi.money/'},
-    {content:'Voting',href:'https://snapshot.page/#/dfi'},
-    {content:'Documentation',href:'https://docs.dfi.money/'},
-    // {content:'Uniswap ETH-YFII',href:'https://app.uniswap.org/#/swap?outputCurrency=0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83'},
-];
-
 export default function FooterLinks(props) {
     const classes = useStyles();
     const { t } = useTranslation();
+    const title = t('Home-dfiproducts-title');
+
+    const footerLinkArr = [
+        {content:t('Home-footer-contract'),href:'https://bscscan.com/token/0x7F70642d88cf1C4a3a7abb072B53B929b653edA5'},
+        // {content:'CoinMarketCap',href:'https://coinmarketcap.com/zh/currencies/yearn-finance-ii/'},
+        // {content:'CoinGecko',href:'https://www.coingecko.com/en/coins/dfi-money'},
+        {content:t('Home-footer-forum'),href:'https://gov.dfi.money/'},
+        // {content:'Stats',href:'https://stats.dfi.money/'},
+        {content:t('Home-footer-voting'),href:'https://snapshot.page/#/dfi'},
+        {content:t('Home-footer-documentation'),href:'https://docs.dfi.money/'},
+        // {content:'Uniswap ETH-YFII',href:'https://app.uniswap.org/#/swap?outputCurrency=0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83'},
+    ];
 
     const [anchorEl, setAnchorEl] = useState(null);
     const handlePopoverOpen = (event) => {
