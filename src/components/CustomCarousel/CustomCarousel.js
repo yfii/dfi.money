@@ -42,7 +42,7 @@ import adastrongmanage from "assets/img/home/adastrongmanage@1x.png";
 
 // eco image
 import ecowepiggy from "assets/img/home/wepiggy@1x.png";
-import ecofinancex from "assets/img/home/fnxfans@1x.png";
+import ecofinnexus from "assets/img/home/finnexus@1x.png";
 import ecograpfarmer from "assets/img/home/grapfarmer@1x.png";
 import ecosfinance from "assets/img/home/ecos.finance@1x.png";
 import ecoysd from "assets/img/home/ecoysd@1x.png";
@@ -264,10 +264,10 @@ function CustomCarousel(props) {
           {/* <a target="_blank" className={classes.ecotitlebuttona} href="https://wepiggy.com/">立即访问</a> */}
           </li>
           <li>
-          <img src={ecofinancex}/>
+          <img src={ecofinnexus}/>
           <p className={classes.pcontext}>{t('Home-optionsplatform')}</p>
           <div className={classes.ecotitlebutton}>
-            <a target="_blank" className={classes.ecotitlebuttona} href="https://www.yuque.com/fnxfans">{t('Home-visitnow')}</a>
+            <a target="_blank" className={classes.ecotitlebuttona} href="https://finnexus.io/">{t('Home-visitnow')}</a>
           </div>
           {/* <a target="_blank" className={classes.ecotitlebuttona} href="https://financex.io/">立即访问</a> */}
           </li>
