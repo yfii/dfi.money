@@ -137,7 +137,7 @@ function CustomCarousel(props) {
           <div className={classes.title}>Deposit to Earn !</div>
           <div className={classes.titlenext}>A DeFi-farming aggregator that automatically puts your crypto assets to work for high yield profits.</div>
           <div className={classes.titlebutton}>
-            <a className={classes.titlebuttona} href="#/vault">立即赚取收益！</a>
+            <a className={classes.titlebuttona} href="#/vault">{t('Home-dfiproducts-button')}</a>
               </div>
           </div>
           <div className={classes.alignright}>
@@ -239,7 +239,7 @@ function CustomCarousel(props) {
           <img src={adastrongmanage}/>
           <p>{t('Home-powerfulgov')}</p>
           {/* <span>积极的开发、营销和运营团队，可靠的资助委员会，持续的行动。从项目挖掘开始，DFI.Money核心开发团队对协议治理有了更积极、更负责任的考虑，它将与社区共同构建独特的DAO价值和科学的治理框架。</span> */}
-          <span>{t('Home-clickview')}<a target="_blank" href="https://gov.dfi.money/c/grants/13"> {t('Home-progress')}</a></span>
+          <span>{t('Home-clickview')}<a target="_blank" href="https://gov.dfi.money/t/topic/780"> {t('Home-progress')}</a></span>
             
           </li>
         </ul>
@@ -311,19 +311,29 @@ function CustomCarousel(props) {
       <div className={classes.productsupportedmine}>
         <ul>
           <li>
+          <a target="_blank" href="https://www.boringdao.com/">
           <img src={boringdao}/>
+          </a>
           </li>
           <li>
+          <a target="_blank" href="https://orbits.finance/">
           <img src={orbits}/>
+          </a>
           </li>
           <li>
+          <a target="_blank" href="https://wepiggy.com/">
           <img src={wepiggy} />
+          </a>
           </li>
           <li>
+          <a target="_blank" href="https://qian.finance/home">
           <img src={qian_protocol}/>
+          </a>
           </li>
           <li>
+          <a target="_blank" href="https://www.golff.finance/">
           <img src={golff} />
+          </a>
           </li>
         </ul>
       </div>
@@ -333,16 +343,24 @@ function CustomCarousel(props) {
       
           <ul>
           <li>
+          <a target="_blank" href="https://for.tube/">
           <img src={fortube}/>
+          </a>
           </li>
           <li>
+          <a target="_blank" href="https://filda.io/">
           <img src={filda}/>
+          </a>
           </li>
           <li>
+          <a target="_blank" href="https://01.finance/">
           <img src={flux}/>
+          </a>
           </li>
           <li>
+          <a target="_blank" href="https://wepiggy.com/">
           <img src={wepiggyload}/>
+          </a>
           </li>
         </ul>
           </div>
