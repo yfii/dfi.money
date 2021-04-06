@@ -262,7 +262,7 @@ export function useDeposit(poolAddress, tokenAddress) {
             await new Promise(async (resolve, reject) => {
                 const contract = new web3.eth.Contract(LunarModuleAbi, poolAddress);
 
-                let gas = await (tokenAddress !== '' ? contract.methods.deposit(amount).estimateGas({ from: address })
+                let gas = await ((tokenAddress !== '' && networkId !== 1) ? contract.methods.deposit(amount).estimateGas({ from: address })
                 : contract.methods.depositETH().estimateGas({ from: address, value: amount }));
                 if (networkId === 128)
                     gas = Math.floor(gas * 1.1)
