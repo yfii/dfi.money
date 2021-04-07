@@ -1,6 +1,6 @@
 {
   "name": "vault",
-  "homepage": "https://yfii.ml/",
+  "homepage": "https://dfi.money/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -126,8 +126,6 @@
     "build": "node scripts/build.js",
     "build:ci": "CI= node scripts/build.js",
     "test": "node scripts/test.js",
-    "buildAndDeploy": "node scripts/build.js && echo 'bsc.dfi.money' >> ./build/CNAME && gh-pages -d build",
-    "deploy1": "echo 'bsc.dfi.money' >> ./build/CNAME && gh-pages -d build",
     "testprod": "node scripts/build.js &&  echo 'testbscprod.dfi.money' >> ./build/CNAME && gh-pages -d build -r git@github.com:yfii/bsc-testprod.git"
   },
   "eslintConfig": {

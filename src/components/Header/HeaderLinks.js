@@ -40,6 +40,7 @@ export default function HeaderLinks(props) {
     // {value:'inactive',label:t('Nav-inactive')},
     {value:'gov',label:t('Nav-Gov'),externalLink:t('Nav-GovLink')},
     {value:'guides',label:t('Nav-Guides'),externalLink:t('Nav-GuidesLink')},
+    {value:'ethlinks',label:t('Nav-EthLinkValue'),externalLink:t('Nav-EthLink')},
     // {value:'social',label:t('Nav-Social'),externalLink:t('Nav-GuidesLink')},
   ]
 
