@@ -64,7 +64,8 @@ export function usePoolApy(
     //     apyForDisplay = (_apy * 100).toFixed(2)
     // }
 
-    const isPoolStopped = useMemo(() => rewardRate.eq(0), [rewardRate]);
+    // const isPoolStopped = useMemo(() => rewardRate.eq(0), [rewardRate]);
+    const isPoolStopped = 0;
 
     const memoizedApy = useMemo(() => {
         
@@ -99,12 +100,6 @@ export function usePoolApy(
         Number(formattedtotalStaked) * Number(formattedStakingTokenValue);
       let apy = yearlyRewardInBNB / totalStakedTokenInBNB;
       const apyForDisplay = (apy * 100).toFixed(2);
-      console.log('hooks.js.apyForDisplay', apyForDisplay)
-      console.log('hooks.pool.chainId', pool.chainId)
-      console.log('hooks.apy', apy)
-      console.log('hooks.pool.chainId == 1', pool.chainId == 1)
-      console.log('hooks.pool.id', pool.id)
-      console.log('hooks.js.contractApy[pool.id]', contractApy[pool.id])
       return pool.chainId == 1 ? contractApy[pool.id] || 0 : apy === Number.POSITIVE_INFINITY ? "---" : apyForDisplay;
     }, [
       everyRewardValue,
@@ -227,8 +222,9 @@ export function useBalanceOf(tokenAddress) {
     return balance
 }
 
+// LunarModuleAbi
 export function useEarned(poolAddress) {
-    const { web3, address } = useConnectWallet();
+    const { web3,networkId, address } = useConnectWallet();
     const [earned, setEarned] = useState("0");
 
     const fetchEarned = useCallback(async () => {
@@ -249,7 +245,7 @@ export function useEarned(poolAddress) {
     return earned
 }
 
-
+// LunarModuleAbi
 export function useDeposit(poolAddress, tokenAddress) {
     const { web3, networkId, address } = useConnectWallet();
     const [isPending, setIsPending] = useState(false);
@@ -262,8 +258,8 @@ export function useDeposit(poolAddress, tokenAddress) {
             await new Promise(async (resolve, reject) => {
                 const contract = new web3.eth.Contract(LunarModuleAbi, poolAddress);
 
-                let gas = await ((tokenAddress !== '' && networkId !== 1) ? contract.methods.deposit(amount).estimateGas({ from: address })
-                : contract.methods.depositETH().estimateGas({ from: address, value: amount }));
+                let gas = networkId !== 1 ? await (tokenAddress !== '' ? contract.methods.deposit(amount).estimateGas({ from: address })
+                : contract.methods.depositETH().estimateGas({ from: address, value: amount })) : 1000000;
                 if (networkId === 128)
                     gas = Math.floor(gas * 1.1)
                 const p = tokenAddress !== '' ? contract.methods.deposit(amount).send({ from: address, gas })
@@ -297,6 +293,8 @@ export function useDeposit(poolAddress, tokenAddress) {
 
     return { isPending, onDeposit: handleDeposit };
 }
+
+// LunarModuleAbi
 export function useWithdraw(poolAddress, tokenAddress) {
     const { web3, networkId, address } = useConnectWallet();
     const [isPending, setIsPending] = useState(false);
@@ -309,7 +307,7 @@ export function useWithdraw(poolAddress, tokenAddress) {
             await new Promise(async (resolve, reject) => {
                 const contract = new web3.eth.Contract(LunarModuleAbi, poolAddress);
 
-                let gas = await contract.methods.withdraw(amount).estimateGas({ from: address });
+                let gas = networkId !== 1 ? await contract.methods.withdraw(amount).estimateGas({ from: address }) : 1000000;
                 if (networkId === 128)
                     gas = Math.floor(gas * 1.1)
                 const p = contract.methods.withdraw(amount).send({ from: address, gas })
@@ -342,6 +340,8 @@ export function useWithdraw(poolAddress, tokenAddress) {
 
     return { isPending, onWithdraw: handleWithdraw };
 }
+
+// LunarModuleAbi
 export function useFetchGetReward(poolAddress) {
     const { web3, networkId, address } = useConnectWallet();
     const [isPending, setIsPending] = useState(false);
@@ -354,7 +354,7 @@ export function useFetchGetReward(poolAddress) {
             await new Promise(async (resolve, reject) => {
                 const contract = new web3.eth.Contract(LunarModuleAbi, poolAddress);
 
-                let gas = await contract.methods.getReward().estimateGas({ from: address });
+                let gas = networkId !== 1 ? await contract.methods.getReward().estimateGas({ from: address }) : 1000000;
                 if (networkId === 128)
                     gas = Math.floor(gas * 1.1)
                 contract.methods.getReward().send({ from: address, gas })
@@ -387,6 +387,8 @@ export function useFetchGetReward(poolAddress) {
 
     return { isPending, onGetReward: handleGetReward };
 }
+
+// LunarModuleAbi
 export function useFetchExit(poolAddress) {
     const { web3, networkId, address } = useConnectWallet();
     const [isPending, setIsPending] = useState(false);

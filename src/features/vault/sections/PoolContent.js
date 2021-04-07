@@ -36,7 +36,8 @@ export default function PoolContent({ index, pool, classes, openedCardList, open
     let balanceSingle = byDecimals(tokenBalance, pool.tokenDecimals);
     const depositedBalance = useBalanceOf(pool.earnContractAddress);
     let singleDepositedBalance = byDecimals(depositedBalance, pool.itokenDecimals);
-    const allowance = useAllowance(pool.tokenAddress, pool.earnContractAddress)
+    const allowance = useAllowance(pool.tokenAddress, pool.earnContractAddress);
+    const networkId = pool.chainId;
 
     const { isPending: isApprovePending, onApprove } = useApprove(pool.tokenAddress, pool.earnContractAddress)
     const { onExit, isPending: isExitPending } = useFetchExit(pool.earnContractAddress)
@@ -179,7 +180,27 @@ export default function PoolContent({ index, pool, classes, openedCardList, open
                   value={balanceToWithdrawSlider}
                   onChange={handleWithdrawAmount.bind(this,index,depositedBalance,pool.tokenDecimals)}
                   />
-              <div className={classes.showDetailButtonCon}>
+                  {networkId == "1" ? 
+                  (<div className={classes.showDetailButtonCon}>
+                  <Button
+                      style={{
+                          width: '180px',
+                          margin: '12px 5px',
+                          fontSize: '14px',
+                          fontWeight:'bold',
+                          backgroundColor:'#353848',
+                          color:'#635AFF',
+                          boxShadow:'0 2px 2px 0 rgba(53, 56, 72, 0.14), 0 3px 1px -2px rgba(53, 56, 72, 0.2), 0 1px 5px 0 rgba(53, 56, 72, 0.12)'
+                      }}
+                      round
+                      type="button"
+                      color="primary"
+                      disabled={isWithdarwPending}
+                      onClick={() => onWithdraw(balanceToWithdrawSlider >= 100 ? depositedBalance : new BigNumber(balanceToWithdraw).multipliedBy(new BigNumber(10).exponentiatedBy(pool.tokenDecimals)).toString(10))}
+                      >
+                      {isWithdarwPending ? `${t('Vault-WithdrawING')}`: `${t('Vault-WithdrawButton')}`}
+                  </Button>
+              </div>) : (<div className={classes.showDetailButtonCon}>
                   <Button
                       style={{
                           width: '180px',
@@ -232,7 +253,9 @@ export default function PoolContent({ index, pool, classes, openedCardList, open
                       >
                       {isExitPending ? `${t('Vault-ExitING')}`: `${t('Vault-ExitButton')}`}
                   </Button>
-              </div>
+              </div>)
+                  }
+              
           </Grid>
 
         </Grid>
